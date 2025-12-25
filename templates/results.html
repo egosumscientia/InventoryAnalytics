@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow">
+  <h2 class="text-2xl font-semibold mb-4">Resultados del análisis</h2>
+  <p class="text-gray-600 mb-6">Archivo procesado: <strong>{{ filename }}</strong></p>
+  <ul class="divide-y divide-gray-200">
+    {% for key, value in summary.items() %}
+    <li class="py-2 flex justify-between">
+      <span class="font-medium">{{ key }}</span>
+      <span>{{ value }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="/" class="mt-6 inline-block bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700">
+    ← Volver al Dashboard
+  </a>
+</div>
+{% endblock %}

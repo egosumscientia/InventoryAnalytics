@@ -1,0 +1,1001 @@
+codigo,nombre,cantidad,precio,categoria,ubicacion
+PR001,Tuerca Inoxidable,,gratis,Ferretería,Estante A2
+PR002,Conector 10m,349,216.1,Electricidad,Estante A7
+PR003,Producto Standard,997,79.72,,Estante E5
+PR004,Martillo,297,855.46,Herramientas,Estante C7
+PR005,Alicate Acero,176,245.57,Herramientas,Estante B9
+PR006,like,275,,Jardinería,Estante D5
+PR007,Brocha Espuma,439,400.0,Pintura,Estante A9
+PR008,Cable 10A,395,996.13,Electrónica,Estante D9
+PR009,Tornillo Hexagonal,349,435.33,Ferretería,Estante F2
+PR010,Cemento 25kg,520,153.69,Construcción,Estante D8
+PR011,Clavo,900,806.97,Ferretería,Estante B7
+PR012XX,Cable Coaxial,487,165.96,Electrónica,Estante E3
+PR013,Regadera Grande,530,248.66,Jardinería,
+PR014,Manguera,235,,Jardinería,Almacén
+PR015,Brocha Metal,804,407.65,Pintura,Perdido
+PR016,Fusible Aislante,muchos,110.16,Electricidad,Estante D8
+PR017,Cinta Azul,877,51.54,Electricidad,Estante F9
+PR018,Producto Standard,925,1189.49,,Estante F6
+PR019,Teja Macizo,992,-0.5,Construcción,Estante A4
+PR020,Producto,872,595.44,of,Estante B7
+PR021,Manguera Profesional,324,205.05,Jardinería,Estante B7
+PR022,"Grifo 1/2""",1000,996.1,Fontanería,Almacén
+PR023,"Tubo 3/4""",557,612.07,Fontanería,Estante E6
+PR024,Ladrillo Hueco,761,273.08,Construcción,Estante F1
+PR025,Arena Hueco,850,4.54,Construcción,Estante E5
+PR026,"Junta 1/2""",N/A,834.76,Fontanería,Estante B1
+PR027,Tornillo M8,363,884.25,Ferretería,Estante E4
+PR028,scene,341,412.3,Jardinería,Estante F3
+PR029,parent,205,460.84,Construcción,Estante F6
+PR,Rastrillo Grande,522,981.17,Jardinería,Estante A2
+PR031,Arena,354,314.36,Construcción,Estante D6
+PR032,Rastrillo,552,940.32,Jardinería,Estante B4
+PR033,Condensador UTP,308,667.23,Electrónica,Estante E9
+PR034,Sifón Flexible,416,1.41,Fontanería,Estante D1
+PR035,Llave Profesional,291,633.31,Herramientas,Estante F8
+PR036,Regadera Plástico,487,768.72,Jardinería,Estante E5
+PR037,Caja Aislante,225,958.01,Electricidad,Estante A4
+PR038,LED 220V,774,613.04,Electrónica,Estante D6
+PR039,Lija Espuma,534,240.01,Pintura,Estante F1
+PR040,Teja,393,706.71,Construcción,Perdido
+PR041,Brocha Metal,21,765.83,Pintura,Estante A1
+PR042,Viga Termoaislante,500,436.4,Construcción,Desconocido
+PR043,Cinta Amarillo,,663.34,Electricidad,Perdido
+PR044,Bandeja Espuma,901,752.26,Pintura,Estante B8
+PR45,Rodillo 5cm,668,gratis,Pintura,Estante A2
+PR046,Manguera Grande,172,963.77,Jardinería,Estante F5
+PR047,Ladrillo Reforzado,733,592.51,Construcción,Estante B7
+PR048,Teja Termoaislante,356,661.86,Construcción,Desconocido
+PR049,Producto Standard,446,522.23,next,Estante E4
+PR050,Espátula 5cm,462,465.24,Pintura,Estante C7
+PR051,Brocha Espuma,902,880.23,Pintura,Estante D7
+PR052,LED 10A,503,18.23,Electrónica,Estante C8
+PR053,Arena Reforzado,564,703.15,Construcción,Estante B8
+PR054,Tijeras Metal,496,590.0,Jardinería,Estante E3
+PR055,Condensador UTP,130,974.32,Electrónica,Estante E9
+PR056,Rodillo Plástico,989,1470.53,Pintura,Estante A5
+PR057,Cable 5m,N/A,764.68,Electrónica,Estante F6
+PR058,Cinta Azul,636,-0.5,Electricidad,Estante B5
+PR059,Cemento Macizo,,470.44,Construcción,Desconocido
+PR,Bandeja Cerda,558,149.84,Pintura,Estante B1
+PR061,Producto Standard,966,540.44,Varios,Estante E3
+PR062,Producto,691,575.62,only,Estante F4
+PR063,Cemento 25kg,600,814.43,Construcción,Estante D4
+PR064,Martillo 300g,968,760.74,Herramientas,
+PR065,Llave Acero,556,55.15,Herramientas,Estante E4
+PR066,Brocha Espuma,716,29.84,Pintura,Estante F7
+PR067,"Tubo 1/2""",121,154.82,Fontanería,Estante C1
+PR068,Viga Termoaislante,196,508.73,Construcción,Estante A5
+PR069,rich,858,998.9,Electricidad,Estante B1
+PR070,Espátula Espuma,715,383.59,Pintura,Estante C9
+PR071,Producto Standard,38,965.39,relate,Estante A7
+PR072XX,Rodillo Cerda,muchos,693.01,Pintura,Estante C4
+PR073,my,muchos,747.02,Electricidad,Estante A7
+PR074,article,301,431.26,Electrónica,Estante C9
+PR075,"Tubo 3/4""",598,461.69,Fontanería,Estante B8
+PR076,Espátula Espuma,307,424.88,Pintura,Estante C2
+PR077,Fusible Amarillo,717,977.97,Electricidad,Estante B9
+PR078,Producto Standard,361,190.94,,Estante F4
+PR079,Tubo Flexible,135,1147.56,Fontanería,Estante A9
+PR080,Alicate 300g,303,339.38,Herramientas,Estante A5
+PR081,Rastrillo Grande,,1268.29,Jardinería,Estante F3
+PR082,Portalámparas Aislante,966,915.34,Electricidad,Estante A5
+PR083,Bandeja 5cm,312,117.0,Pintura,Estante D8
+PR084,Espátula Cerda,671,1244.68,Pintura,Estante B9
+PR085,Producto Standard,377,977.86,Otro,Estante C8
+PR086,LED,655,22.34,Electrónica,Estante B7
+PR87,Regadera Metal,152,596.39,Jardinería,Estante B1
+PR088,single,N/A,16.77,Construcción,Estante A9
+PR089,LED 220V,516,615.49,Electrónica,Estante E7
+PR090,Rodillo,412,108.85,Pintura,Estante D2
+PR091,Producto,649,712.44,,Estante E3
+PR092,Lija,874,877.83,Pintura,Estante B5
+PR093,Rastrillo Grande,682,953.64,Jardinería,Estante D4
+,Producto Standard,421,665.68,,Estante F2
+PR095,Producto Standard,230,350.76,Otro,Estante A8
+PR096,Tijeras Profesional,571,,Jardinería,Desconocido
+PR097,Arena,580,70.52,Construcción,Estante A2
+PR098,Producto Standard,582,883.46,Varios,Estante F4
+PR099,LED 5m,525,430.48,Electrónica,Estante E8
+PR100XX,Teja,969,138.1,Construcción,Estante C3
+PR101,Brocha Cerda,854,354.81,Pintura,Estante F3
+PR102,Producto Standard,428,405.63,,Estante B2
+PR103,Bandeja,250,401.05,Pintura,Desconocido
+PR104,Regadera,544,906.02,Jardinería,Estante F2
+PR105,"Válvula 3/4""",672,1475.65,Fontanería,Estante E1
+PR106,Espátula Espuma,643,440.32,Pintura,Estante E5
+PR107,Arena Reforzado,muchos,77.65,Construcción,Estante A6
+PR108,Conector Aislante,830,189.05,Electricidad,Estante D6
+PR109,Arandela M8,,524.54,Ferretería,Estante C6
+PR110,Arena 25kg,-1,387.18,Construcción,Estante E7
+PR111,Junta PVC,716,129.82,Fontanería,Estante A6
+PR112,Portalámparas Amarillo,,19.21,Electricidad,Estante B5
+PR113,Brocha 5cm,553,883.8,Pintura,Desconocido
+PR114,Válvula Flexible,170,44.65,Fontanería,Estante F2
+PR115,Lija Plástico,199,947.18,Pintura,Estante D3
+PR116,Cinta Amarillo,257,,Electricidad,Estante A7
+PR117,Resistor Coaxial,94,222.82,Electrónica,Estante C5
+PR118,Portalámparas Rojo,327,839.34,Electricidad,Estante F6
+PR119,Clavo Allen,6,19.98,Ferretería,Estante B1
+PR120,Portalámparas 10m,813,63.74,Electricidad,Estante D5
+PR121,Perno Allen,muchos,417.15,Ferretería,Estante A6
+PR122,Sierra Ergonómico,,,Herramientas,Estante A2
+PR123,Cable 5m,361,813.7,Electrónica,Estante F5
+PR124,Brocha,469,gratis,Pintura,Estante C3
+PR125,difference,293,781.06,Electricidad,Estante C4
+PR126,Llave 300g,192,498.03,Herramientas,Estante D7
+PR127,Cable Coaxial,329,328.59,Electrónica,Estante D2
+PR128,agent,362,435.51,Electricidad,Estante F6
+PR129,LED Coaxial,147,678.41,Electrónica,Estante A9
+PR130,Producto Standard,782,,Otro,Estante E6
+PR,LED UTP,267,215.36,Electrónica,Estante E9
+PR132,Brocha Plástico,830,845.68,Pintura,Estante C5
+PR133,Cemento Macizo,521,985.15,Construcción,Estante B7
+PR134,Perno Inoxidable,906,1154.65,Ferretería,Estante F5
+PR135,Condensador 220V,900,551.75,Electrónica,Estante F5
+PR136,Fusible Rojo,331,226.24,Electricidad,Estante D7
+PR137,Interruptor 220V,515,592.22,Electrónica,Estante B2
+PR138,Sierra,84,,Herramientas,Estante F5
+PR139,Perno Allen,827,298.14,Ferretería,
+PR140,Caja Rojo,882,399.32,Electricidad,Estante D6
+PR141,Martillo Acero,,418.72,Herramientas,Estante B2
+PR142,Destornillador 300g,510,1472.62,Herramientas,Estante B5
+PR143XX,Perno Allen,9,431.5,Ferretería,Estante F2
+PR144,Cinta,372,74.46,Electricidad,Estante F4
+PR145,Cable 5m,375,199.86,Electrónica,Estante D6
+PR146,Producto Standard,528,931.44,,Estante C8
+PR147,Teja Termoaislante,836,-0.5,Construcción,Estante E2
+PR148,Arandela Inoxidable,739,1240.23,Ferretería,Estante E8
+PR149,LED Coaxial,794,472.13,Electrónica,Estante F2
+PR150,Producto Standard,178,533.59,Varios,Estante E8
+PR151,Cemento 25kg,997,771.4,Construcción,Estante E9
+PR152,Sierra 15cm,588,380.31,Herramientas,Estante F8
+PR153,Grifo Cobre,766,202.87,Fontanería,Estante D9
+PR154,Junta Flexible,239,1206.66,Fontanería,Estante F5
+PR155,Sifón PVC,662,gratis,Fontanería,Estante F2
+PR156,Tuerca M6,407,187.13,Ferretería,Estante C1
+PR157,Perno Hexagonal,657,494.42,Ferretería,Estante D6
+PR158,Pala Grande,15,790.98,Jardinería,Estante F4
+PR159,Conector Aislante,144,935.89,Electricidad,Perdido
+PR160,Arena 25kg,710,668.12,Construcción,Estante B2
+PR161,Arena Macizo,466,606.13,Construcción,Estante D9
+PR162,Tijeras Pequeño,371,-0.5,Jardinería,Estante D6
+PR163,Junta Flexible,921,808.88,Fontanería,Estante D6
+PR164,Arandela M6,593,-0.5,Ferretería,Estante A4
+PR165,LED,788,641.88,Electrónica,Estante C9
+PR166,Cinta Amarillo,881,179.3,Electricidad,Estante D7
+PR167,Manguera Profesional,389,248.26,Jardinería,Estante B9
+PR168XX,Interruptor UTP,69,34.54,Electrónica,Estante F1
+PR169,Rastrillo Plástico,297,916.48,Jardinería,Estante E1
+PR170,Destornillador 300g,63,592.08,Herramientas,Estante B3
+PR171,Fusible Azul,327,408.85,Electricidad,Estante B3
+PR172,Brocha Plástico,576,417.09,Pintura,Estante C7
+PR173,Manguera Plástico,850,269.19,Jardinería,Estante E3
+PR174,Producto Standard,931,-0.5,,Estante F4
+PR175,Regadera Grande,390,649.07,Jardinería,Estante C6
+PR176,Lija Cerda,424,gratis,Pintura,them
+PR177,Caja 10m,671,338.23,Electricidad,Estante D5
+PR178,Bandeja Plástico,911,642.17,Pintura,
+PR179,Cable Coaxial,N/A,,Electrónica,realize
+PR180,pressure,549,18.13,Pintura,Estante E8
+PR181,Tubo Flexible,835,795.14,Fontanería,Perdido
+PR182,Regadera Plástico,879,32.65,Jardinería,Estante C7
+PR183,Tuerca,661,566.29,Ferretería,Estante A7
+PR184,technology,muchos,563.95,Ferretería,Desconocido
+PR185,Producto Standard,870,896.63,Varios,Estante F4
+PR186,Condensador,859,1302.59,Electrónica,Estante C3
+PR187,Producto Standard,697,380.69,Otro,Estante C1
+PR,LED 10A,110,1471.48,Electrónica,Estante B9
+PR189,LED UTP,muchos,597.33,Electrónica,Estante C7
+PR190,Producto Standard,174,170.33,develop,Estante B9
+PR191,Condensador UTP,967,625.41,Electrónica,Estante B4
+PR192,Sifón PVC,441,859.65,Fontanería,Estante A9
+PR193,Regadera Grande,649,576.3,Jardinería,Estante C7
+PR194,Conector 10m,564,gratis,Electricidad,Estante C1
+PR195,LED 5m,675,423.7,Electrónica,Estante D2
+PR196,Espátula Plástico,810,701.93,Pintura,Estante E3
+PR197,Resistor 220V,,332.27,Electrónica,Estante A7
+PR198,Producto Standard,26,296.14,Otro,Estante A6
+PR199,Grifo Cobre,100,697.07,Fontanería,Estante C2
+PR200,Producto Standard,566,560.29,,Estante B6
+PR201,"Sifón 3/4""",440,705.03,Fontanería,Estante F4
+PR202,Interruptor 10A,687,528.19,Electrónica,Estante E3
+PR203,Portalámparas 10m,723,918.76,Electricidad,Estante E8
+PR204,Cable 220V,611,384.33,Electrónica,Estante E5
+PR205,Sifón Cobre,887,10.57,Fontanería,Estante F8
+PR206,Lija Plástico,579,,Pintura,Almacén
+PR207,Junta Flexible,587,775.34,Fontanería,Estante C6
+PR208,Clavo M6,670,298.41,Ferretería,Estante D2
+PR209,Cable 220V,882,633.14,Electrónica,Estante A9
+PR210,Tijeras Profesional,721,573.16,Jardinería,Estante D6
+PR211,LED Coaxial,136,711.68,Electrónica,Estante F4
+PR212,Conector Azul,649,769.12,Electricidad,Estante F3
+PR213,challenge,751,,Herramientas,Estante F6
+PR214,Regadera Grande,592,852.57,Jardinería,Estante E8
+PR215XX,Tornillo Allen,982,995.7,Ferretería,Estante E6
+PR216,Arena,665,396.95,Construcción,Estante E9
+PR217,Fusible,136,519.92,Electricidad,Estante A1
+PR218,LED Coaxial,749,104.1,Electrónica,Estante C2
+PR219,Válvula,625,440.66,Fontanería,Estante E5
+PR220,Cinta Aislante,127,384.65,Electricidad,Estante C3
+PR221,Manguera Profesional,964,848.04,Jardinería,Estante C2
+PR222,Pala Metal,116,638.44,Jardinería,
+PR223,Sierra Profesional,978,73.92,Herramientas,Estante A1
+PR224,Clavo Inoxidable,434,83.35,Ferretería,Estante E4
+PR225,Interruptor Coaxial,401,763.46,Electrónica,Estante E6
+PR226,Producto,,612.68,rate,Almacén
+PR227,Válvula Flexible,739,372.5,Fontanería,Estante B9
+PR228,Cable 220V,1000,496.65,Electrónica,Estante A4
+PR229,"Grifo 1/2""",522,-0.5,Fontanería,Estante D4
+PR230,Tubo Cobre,255,720.57,Fontanería,Estante A5
+PR231,Cable UTP,71,866.17,Electrónica,Estante C2
+PR,Bandeja Metal,378,493.87,Pintura,Estante B4
+PR233,Rastrillo,652,877.32,Jardinería,Estante A1
+PR234,Portalámparas 10m,985,,Electricidad,Almacén
+PR235,Portalámparas Amarillo,N/A,394.96,Electricidad,Estante A4
+PR236,Grifo Cobre,754,453.31,Fontanería,Estante B4
+PR237,Resistor UTP,988,452.47,Electrónica,Estante A8
+PR238,Producto Standard,N/A,396.85,Otro,Desconocido
+PR239XX,"Sifón 1/2""",824,122.33,Fontanería,Almacén
+PR240,Fusible Aislante,-1,646.34,Electricidad,Estante A6
+PR241,Llave,444,395.6,Herramientas,Perdido
+PR242,Pala Plástico,632,295.81,Jardinería,Estante D9
+PR243,Resistor 220V,822,20.51,Electrónica,Estante F1
+PR244,Espátula Cerda,1000,895.87,Pintura,Estante A4
+PR245,Espátula 5cm,247,816.47,Pintura,Estante A4
+PR246,Rastrillo Metal,607,738.37,Jardinería,Estante E2
+PR247,Producto Standard,180,91.17,Otro,Estante B6
+PR248,Producto Standard,865,60.5,at,Estante F1
+PR249,Condensador 10A,345,137.32,Electrónica,Estante D1
+PR250,Brocha Metal,229,814.64,Pintura,Estante F2
+PR251,Tubo Cobre,790,33.35,Fontanería,Estante F7
+PR252,Manguera Plástico,328,885.43,Jardinería,Desconocido
+PR253,Ladrillo Hueco,,969.13,Construcción,Estante D5
+PR254,Martillo Ergonómico,704,451.84,Herramientas,Estante A3
+PR255,Martillo,385,75.93,Herramientas,Estante A6
+PR256,Lija Plástico,104,974.42,Pintura,Estante D9
+PR257,financial,861,55.45,Construcción,
+PR258,Rodillo 5cm,119,398.07,Pintura,Estante E7
+PR259,Cinta Rojo,270,269.29,Electricidad,
+PR260,Producto Standard,839,965.66,Otro,Estante D4
+PR261,Manguera Plástico,923,571.91,Jardinería,Estante B1
+PR262,Brocha Cerda,-1,435.96,Pintura,Estante E5
+PR263,Ladrillo,566,276.92,Construcción,Estante A1
+PR264,Caja Aislante,577,785.96,Electricidad,Estante C5
+PR265,Viga Macizo,148,681.13,Construcción,Estante C8
+PR266,Martillo 15cm,muchos,843.0,Herramientas,Estante E8
+PR267,Producto Standard,92,212.18,Varios,Estante F3
+PR268,Sierra Ergonómico,800,879.45,Herramientas,Almacén
+PR269,Regadera,muchos,274.7,Jardinería,Estante D6
+PR270,Resistor Coaxial,486,350.41,Electrónica,Estante B8
+PR271,LED,799,857.25,Electrónica,Estante E8
+PR272,Fusible 10m,9,608.74,Electricidad,Estante F1
+PR273,Viga Macizo,694,623.98,Construcción,Estante A1
+PR274,Sierra Acero,345,640.95,Herramientas,Estante B8
+PR275,Teja Termoaislante,328,721.56,Construcción,Estante C1
+PR276,Fusible 10m,731,535.1,Electricidad,Estante E7
+PR277,Teja Macizo,743,763.16,Construcción,Estante E8
+PR278,Resistor 5m,600,851.36,Electrónica,Estante E5
+PR279,Resistor 10A,424,gratis,Electrónica,Estante C4
+PR280,Brocha Cerda,60,gratis,Pintura,Estante B2
+PR281,LED 10A,39,730.93,Electrónica,Estante C3
+,Regadera Grande,393,306.81,Jardinería,
+PR283,Teja Macizo,924,750.37,Construcción,Estante F7
+PR284,general,127,650.89,Jardinería,Desconocido
+PR285,Tornillo M6,-1,380.87,Ferretería,Estante D4
+PR286,Manguera Profesional,621,419.41,Jardinería,Estante D6
+PR287,Cable 5m,997,703.73,Electrónica,Estante A3
+PR288,right,929,574.58,Jardinería,Estante A6
+PR289,Cable 10A,304,51.03,Electrónica,Estante A3
+PR290,Alicate Acero,N/A,171.34,Herramientas,Estante D2
+PR291,Ladrillo Hueco,986,835.87,Construcción,Estante D4
+PR292,"Tubo 1/2""",605,569.37,Fontanería,Estante E4
+PR293,Destornillador 300g,65,314.92,Herramientas,Estante E8
+PR294,Pala Profesional,N/A,664.05,Jardinería,Estante B1
+PR,Perno M8,,331.56,Ferretería,Estante D6
+PR296,Caja,587,856.73,Electricidad,Estante A8
+PR297,Clavo,846,,Ferretería,Estante D9
+PR298,Bandeja Plástico,786,473.66,Pintura,Estante F1
+PR299,Resistor,649,292.69,Electrónica,Estante E9
+PR300,"Sifón 3/4""",873,457.59,Fontanería,Estante F1
+PR301,Fusible Amarillo,138,5.33,Electricidad,Estante D9
+PR302,Brocha Cerda,674,882.81,Pintura,Estante C7
+PR303,Pala Metal,617,748.68,Jardinería,Estante E9
+PR304,Sierra Ergonómico,704,672.7,Herramientas,Estante E6
+PR305,Grifo Flexible,585,710.41,Fontanería,Estante F9
+PR306,Conector Aislante,205,785.75,Electricidad,Estante E8
+PR307,Arandela Hexagonal,105,675.85,Ferretería,Estante B6
+PR308,relationship,427,975.85,Electricidad,Estante D9
+PR309,Producto Standard,560,197.27,Otro,Estante B4
+PR310,Tubo Flexible,42,557.04,Fontanería,Estante E2
+PR311,Tuerca,612,,Ferretería,Estante E1
+PR312,Condensador 220V,1000,543.54,Electrónica,Estante C5
+PR313,Pala Profesional,575,981.15,Jardinería,Desconocido
+PR314,Pala Plástico,554,25.68,Jardinería,Estante F5
+PR315,Bandeja Metal,-1,956.32,Pintura,Estante A1
+PR316,Regadera Plástico,849,976.25,Jardinería,Estante E6
+PR317,Resistor,39,,Electrónica,Estante E1
+PR318,Viga Hueco,122,641.78,Construcción,Estante F4
+PR319,Tornillo Hexagonal,309,282.24,Ferretería,Estante C7
+PR320,Perno Inoxidable,650,677.61,Ferretería,Estante F6
+PR321,Martillo Acero,1000,537.61,Herramientas,Estante C2
+PR322,Sierra Ergonómico,199,671.31,Herramientas,Estante A4
+PR323,Rodillo 5cm,595,331.52,Pintura,Estante E6
+PR324,Cemento Termoaislante,711,565.99,Construcción,Estante C3
+PR,Válvula PVC,138,332.23,Fontanería,Estante D2
+PR326,Ladrillo 25kg,144,197.24,Construcción,Estante E5
+PR327,Producto Standard,565,894.09,,Estante E6
+PR328,Sierra 300g,93,502.67,Herramientas,Estante F7
+PR329,Válvula Flexible,991,732.27,Fontanería,Estante A3
+PR330,stop,930,388.71,Pintura,Estante A3
+PR331,Producto Standard,388,653.68,Otro,Estante D7
+PR332,Pala Pequeño,7,139.83,Jardinería,Estante A5
+PR333,Cemento Hueco,425,720.54,Construcción,Estante D4
+PR334,Sifón,1000,135.59,Fontanería,Estante E1
+PR335,Válvula Flexible,900,662.08,Fontanería,Estante A6
+PR336,Brocha Cerda,841,623.59,Pintura,Estante B2
+PR337,Sierra 300g,17,859.73,Herramientas,Estante C9
+PR338,Interruptor 220V,121,-0.5,Electrónica,Estante F5
+PR339,Portalámparas Azul,822,768.9,Electricidad,Estante F7
+PR340,Condensador UTP,898,258.55,Electrónica,
+PR341,LED 5m,110,651.92,Electrónica,Estante D8
+PR342,Llave Ergonómico,380,484.28,Herramientas,Estante E1
+PR343,Fusible 10m,521,339.1,Electricidad,Estante E9
+PR344,Tornillo Allen,446,,Ferretería,
+PR345,Conector Aislante,840,494.87,Electricidad,nothing
+PR346,Perno M8,369,1.29,Ferretería,Estante B9
+PR347,Llave Acero,563,829.94,Herramientas,Estante C5
+PR348,Cemento Hueco,417,559.07,Construcción,Estante C4
+PR349,Teja Reforzado,789,340.32,Construcción,Estante E8
+PR350,Arandela,226,230.7,Ferretería,Estante C5
+PR351,Arandela Hexagonal,N/A,354.18,Ferretería,Estante B9
+PR352,Regadera Grande,208,836.5,Jardinería,Estante F5
+PR353,LED 220V,869,621.05,Electrónica,Estante E1
+PR354,Espátula Metal,539,478.84,Pintura,Estante D6
+PR355,"Tubo 1/2""",N/A,101.65,Fontanería,Estante B8
+PR356,Viga Macizo,216,752.44,Construcción,Estante C8
+PR357,Junta PVC,569,381.5,Fontanería,Estante F3
+PR358,Clavo Inoxidable,324,300.73,Ferretería,Estante E1
+PR359,Producto Standard,343,360.95,,Estante F7
+PR360,Arandela M8,666,175.36,Ferretería,Estante C5
+PR361,Lija Espuma,980,168.41,Pintura,Estante C4
+PR362,Fusible,322,292.06,Electricidad,Estante E6
+PR363,Bandeja Plástico,189,125.91,Pintura,Estante B8
+PR364,LED 10A,27,524.46,Electrónica,Estante A7
+PR365XX,Grifo Cobre,135,171.44,Fontanería,Desconocido
+PR366,Llave 15cm,139,697.93,Herramientas,Estante E3
+PR367,Conector Amarillo,92,366.42,Electricidad,Estante C2
+PR368,Producto Standard,489,766.1,Varios,Estante E3
+PR369,Tuerca Allen,733,390.33,Ferretería,Estante B8
+PR370,Producto Standard,874,-0.5,Varios,Estante E4
+PR371,Rodillo 5cm,105,125.91,Pintura,Estante A1
+PR,Grifo Cobre,475,32.71,Fontanería,Almacén
+PR373XX,Producto Standard,125,714.97,population,Estante D2
+PR374,Tornillo Allen,985,323.74,Ferretería,Estante A3
+PR375,Condensador Coaxial,242,325.19,Electrónica,Estante B9
+PR376,Fusible Azul,159,90.39,Electricidad,Estante A6
+PR377,Martillo,719,108.28,Herramientas,Estante C3
+PR378,middle,742,898.76,Herramientas,Estante D2
+PR379,Brocha Plástico,852,860.7,Pintura,Estante D7
+PR380,argue,389,883.05,Construcción,Estante C6
+PR381,Manguera Pequeño,700,551.92,Jardinería,Estante C3
+PR382,tough,183,202.88,Herramientas,Estante A7
+PR383,Producto,736,gratis,player,Estante F9
+PR384,Producto Standard,273,734.57,,Estante A5
+PR385,Resistor 220V,584,179.72,Electrónica,Estante C9
+PR386,Llave Profesional,517,159.02,Herramientas,Estante D2
+PR387,Alicate 300g,332,563.58,Herramientas,Estante F5
+PR388,Viga Hueco,611,,Construcción,Almacén
+PR389,Sierra Ergonómico,39,156.95,Herramientas,Estante E2
+PR390,Ladrillo Macizo,741,483.05,Construcción,Estante E9
+PR391,Condensador,391,,Electrónica,Estante F8
+PR392,Resistor UTP,648,305.48,Electrónica,model
+PR393,Destornillador 300g,771,505.22,Herramientas,Estante C1
+PR394,Tubo Flexible,88,435.06,Fontanería,Estante F4
+PR395,Tijeras Profesional,74,430.64,Jardinería,Estante E1
+PR396,Producto Standard,174,616.6,guess,Estante D2
+PR,Brocha 5cm,56,621.38,Pintura,Estante F9
+PR398,Tornillo Hexagonal,551,546.88,Ferretería,Estante D9
+PR399,Tubo Flexible,N/A,,Fontanería,
+PR400,may,665,979.81,Otro,Estante F1
+PR401,Producto Standard,730,,Otro,Estante C8
+PR402,Arandela Inoxidable,64,878.8,Ferretería,Estante F8
+PR403,Arena Hueco,534,612.84,Construcción,Estante B6
+PR404,Grifo Flexible,669,541.81,Fontanería,Estante A9
+PR405,"Válvula 3/4""",571,719.72,Fontanería,Estante F9
+PR406,Clavo Hexagonal,193,185.56,Ferretería,Estante E4
+PR407,Regadera Pequeño,867,712.31,Jardinería,Estante C7
+PR408,Válvula,16,950.25,Fontanería,Estante E7
+PR409XX,Tijeras Pequeño,438,42.78,Jardinería,Estante C7
+PR410,Conector Aislante,463,877.89,Electricidad,Estante B7
+PR411,Fusible Aislante,451,305.25,Electricidad,Estante D3
+PR412,Ladrillo Reforzado,463,gratis,Construcción,Estante E9
+PR413,Cinta,919,202.73,Electricidad,Estante B8
+PR414,Tubo,650,524.29,Fontanería,Estante F6
+PR415,Sifón,344,659.87,Fontanería,Estante B1
+PR416,Arandela Hexagonal,121,960.47,Ferretería,Desconocido
+PR417,Producto Standard,488,442.43,receive,Estante A1
+PR418,Teja Macizo,669,146.23,Construcción,local
+PR419,Ladrillo,183,285.1,Construcción,Estante E9
+PR420,box,331,379.56,Fontanería,Perdido
+PR421,Resistor 5m,538,209.84,Electrónica,less
+PR422,Interruptor 5m,869,525.87,Electrónica,Estante C5
+PR423,Lija Metal,298,2.58,Pintura,
+PR424,Rastrillo Profesional,218,,Jardinería,Estante A5
+PR425,Martillo Ergonómico,30,194.82,Herramientas,Estante E8
+PR426,Brocha Metal,474,414.54,Pintura,Estante F9
+PR427,Martillo 15cm,N/A,32.14,Herramientas,Estante E5
+PR428,Sifón PVC,323,272.23,Fontanería,Almacén
+PR429,Arena Hueco,936,1253.0,Construcción,Estante B1
+PR430,Espátula 5cm,961,992.73,Pintura,Estante A3
+,Interruptor UTP,785,313.17,Electrónica,Estante C2
+PR432,Regadera Pequeño,280,274.36,Jardinería,forward
+PR433,Condensador 5m,176,,Electrónica,Estante A4
+PR434,Rodillo Plástico,722,593.16,Pintura,Estante E9
+PR435,Destornillador Ergonómico,,93.82,Herramientas,Estante E9
+PR436,Lija Cerda,632,364.09,Pintura,Estante E7
+PR437,Martillo,491,171.63,Herramientas,Estante E3
+PR438,Cable 5m,411,239.34,Electrónica,Estante B2
+PR,Conector Amarillo,558,173.91,Electricidad,Estante F3
+PR440,Espátula Plástico,979,598.66,Pintura,Estante E3
+PR441,Fusible,909,755.23,Electricidad,Estante F4
+PR442,"Grifo 3/4""",899,570.71,Fontanería,Estante C2
+PR443,Portalámparas Amarillo,414,852.65,Electricidad,strong
+PR444,Arandela M6,720,625.59,Ferretería,Estante C8
+PR445,Rastrillo Grande,158,872.86,Jardinería,Estante A1
+PR446,Producto Standard,,893.69,,Estante D1
+PR447,Espátula Cerda,620,gratis,Pintura,Estante B9
+,Sierra Ergonómico,708,,Herramientas,Estante A6
+PR449,Cable 220V,55,535.5,Electrónica,Perdido
+PR450,Bandeja Espuma,37,598.04,Pintura,Estante F6
+PR451,Perno Hexagonal,640,gratis,Ferretería,Estante F6
+PR452,just,179,739.23,Fontanería,Estante C6
+PR453,Cemento Hueco,87,595.95,Construcción,Estante F9
+PR454,Caja 10m,752,55.27,Electricidad,Estante F8
+PR455,Sifón Flexible,700,475.11,Fontanería,Estante D1
+PR456,Producto Standard,1000,956.23,three,Estante E6
+PR457,Martillo 300g,768,672.22,Herramientas,Estante D7
+PR458,"Tubo 1/2""",538,446.5,Fontanería,Estante C1
+,Tornillo M8,654,957.84,Ferretería,run
+PR460,"Válvula 1/2""",945,769.59,Fontanería,Estante E7
+PR461,Martillo 300g,62,812.99,Herramientas,Estante A5
+PR462,Regadera Profesional,224,107.14,Jardinería,Estante B8
+PR463,LED,669,932.96,Electrónica,Estante B9
+PR464,Sierra,790,436.62,Herramientas,Estante F5
+PR465,Cable 10A,549,359.56,Electrónica,Estante C8
+PR466,Producto,785,203.92,,Estante C7
+PR467,Ladrillo Hueco,449,140.8,Construcción,Estante F2
+PR468,Manguera Pequeño,855,966.61,Jardinería,Desconocido
+PR469,Producto Standard,892,149.8,,Estante A5
+PR470,Producto Standard,665,173.08,Varios,Desconocido
+PR471,Resistor UTP,610,221.35,Electrónica,Estante D1
+PR472,Conector 10m,608,64.16,Electricidad,Estante F4
+PR473,Llave Profesional,1000,158.6,Herramientas,Estante A6
+PR474,Producto Standard,212,271.68,Varios,Estante B7
+PR475,Clavo Hexagonal,5,192.71,Ferretería,Estante A7
+PR476,Regadera Metal,992,498.02,Jardinería,Estante A3
+PR477,Producto Standard,-1,176.71,Otro,Estante D5
+PR478,LED Coaxial,920,779.2,Electrónica,Estante A7
+PR479,Cinta Amarillo,912,216.95,Electricidad,Estante B3
+PR480,"Válvula 3/4""",33,60.59,Fontanería,Estante D3
+PR481,Válvula Flexible,592,855.15,Fontanería,whatever
+PR482,Rastrillo Metal,445,891.93,Jardinería,Estante B1
+PR483,Tornillo,788,426.27,Ferretería,Estante F7
+PR484,Resistor,710,949.98,Electrónica,Estante C1
+PR485,Resistor 220V,,139.49,Electrónica,Estante B3
+PR486,Martillo 15cm,304,270.52,Herramientas,Estante D8
+PR487,Manguera Plástico,932,888.09,Jardinería,Estante C6
+PR488,Tuerca Inoxidable,210,335.59,Ferretería,Estante E6
+PR489,Regadera Profesional,284,1186.41,Jardinería,Estante D7
+PR490,Espátula Espuma,969,978.11,Pintura,Estante B4
+PR491XX,Brocha 5cm,115,496.83,Pintura,Estante D7
+PR492,Perno Allen,661,-0.5,Ferretería,Estante B6
+PR493,Alicate 300g,714,548.92,Herramientas,Estante E1
+PR494,Arena 25kg,49,285.1,Construcción,Estante E4
+PR495,Cemento Macizo,120,gratis,Construcción,Estante C6
+PR496,Arandela M8,125,405.16,Ferretería,Estante B1
+PR497,Sierra 15cm,297,754.41,Herramientas,Estante E7
+PR498,Rodillo Cerda,120,402.23,Pintura,Estante D2
+PR,Sierra 15cm,86,446.01,Herramientas,Estante A6
+PR500,Portalámparas Aislante,370,716.25,Electricidad,Estante C7
+PR501,Arena Hueco,910,992.6,Construcción,Estante C1
+PR502,Cinta Aislante,311,867.66,Electricidad,Estante A5
+PR503XX,Portalámparas Amarillo,141,832.45,Electricidad,Estante D5
+PR504,Producto Standard,-1,300.87,Otro,Estante E5
+PR505,Viga Hueco,284,970.65,Construcción,Estante C6
+PR506,Cinta Rojo,590,-0.5,Electricidad,Estante D3
+PR507,Tubo PVC,muchos,936.38,Fontanería,Estante F5
+PR508,Resistor 5m,715,96.74,Electrónica,Estante F8
+PR509,"Grifo 3/4""",159,831.74,Fontanería,Estante D9
+PR510,Cable UTP,320,139.87,Electrónica,Estante E3
+PR511,Alicate,228,694.55,Herramientas,Estante C2
+PR512,"Sifón 1/2""",,43.47,Fontanería,Estante F6
+PR513,Arandela,11,782.59,Ferretería,Estante B5
+PR514,Pala,765,948.84,Jardinería,Estante B2
+PR515,Manguera,15,716.1,Jardinería,Estante B2
+PR516,Tornillo Allen,604,673.85,Ferretería,Estante F9
+PR517,Conector Rojo,113,496.32,Electricidad,Estante C1
+PR518XX,Tornillo Hexagonal,862,554.36,Ferretería,Estante D1
+PR519,LED UTP,504,396.97,Electrónica,Estante E8
+PR520,Producto Standard,N/A,595.37,Varios,Estante A8
+PR521,Portalámparas Amarillo,809,943.28,Electricidad,Estante E7
+PR522,Conector Aislante,502,628.74,Electricidad,Estante A7
+PR523,Cable 5m,637,760.41,Electrónica,Estante D7
+PR524,Lija Espuma,554,952.63,Pintura,Perdido
+PR525,Condensador UTP,1000,779.6,Electrónica,Estante B2
+PR526,Sifón Cobre,702,470.35,Fontanería,Estante B2
+PR527,Conector Rojo,292,29.12,Electricidad,Desconocido
+PR528,Arandela Hexagonal,58,248.37,Ferretería,Estante E2
+PR529,skin,472,423.05,,Estante C9
+PR530,Bandeja Metal,,675.44,Pintura,Estante D6
+PR531,Alicate 300g,998,840.54,Herramientas,Estante C1
+PR532,Viga Hueco,593,-0.5,Construcción,Estante D7
+PR533,Manguera Grande,553,414.9,Jardinería,Estante D6
+PR534,"Junta 3/4""",844,467.83,Fontanería,Estante D8
+PR535,Fusible 10m,765,300.98,Electricidad,Estante C3
+PR536,LED Coaxial,616,239.24,Electrónica,Estante A2
+PR537,Teja Hueco,280,259.14,Construcción,Estante E7
+PR538,Clavo M6,306,900.67,Ferretería,Estante C6
+PR539,Resistor 220V,535,580.84,Electrónica,Estante D7
+PR540,Cable 220V,826,236.7,Electrónica,Estante B1
+PR541,Rastrillo Plástico,384,113.85,Jardinería,Estante D4
+PR542,Cemento 25kg,1000,-0.5,Construcción,Estante F6
+PR543,Arena Hueco,243,389.08,Construcción,Estante C8
+PR544,Cemento Macizo,647,812.44,Construcción,Estante F6
+PR545,Producto Standard,898,101.3,,Estante B8
+PR546,Sierra Acero,657,630.53,Herramientas,Estante A9
+PR547,Producto Standard,993,649.53,Varios,Estante E3
+PR548,Destornillador 15cm,204,1183.81,Herramientas,Estante F9
+,Tijeras Plástico,204,851.98,Jardinería,teacher
+PR550,Arena Hueco,446,928.36,Construcción,Estante D5
+PR551,Pala Metal,212,995.21,Jardinería,Estante E8
+PR552,Válvula,242,907.42,Fontanería,Estante E8
+PR,Condensador Coaxial,726,597.6,Electrónica,environmental
+PR554,Producto Standard,1000,303.2,Otro,Estante C6
+PR555,Arandela Hexagonal,136,1355.13,Ferretería,Estante A8
+PR556,Grifo PVC,270,761.8,Fontanería,Estante C3
+PR557,Sifón Cobre,N/A,1091.58,Fontanería,Estante F1
+PR558,LED,727,458.3,Electrónica,Estante F2
+PR559,Resistor Coaxial,843,891.0,Electrónica,Estante E2
+PR560,Perno M8,694,,Ferretería,Estante E8
+PR561,Martillo Acero,725,454.6,Herramientas,Estante E3
+PR562,Sierra Ergonómico,884,,Herramientas,Estante F3
+PR563,Producto Standard,N/A,779.71,a,Estante F4
+PR564,Sifón PVC,618,665.85,Fontanería,Estante D6
+PR565,Lija 5cm,831,187.17,Pintura,Estante A6
+PR566,Producto Standard,663,291.41,Otro,Estante F7
+PR567,Grifo PVC,565,-0.5,Fontanería,Estante C9
+PR568,rock,474,183.03,Otro,Estante A6
+PR569,Viga 25kg,941,188.0,Construcción,Estante F3
+PR570,church,14,477.64,Construcción,Estante E7
+PR571,Espátula Plástico,90,14.86,Pintura,Estante A2
+PR572,Regadera Metal,642,539.04,Jardinería,Perdido
+PR,Caja Azul,881,243.39,Electricidad,Estante F9
+PR574,Tornillo Allen,755,731.35,Ferretería,Estante A3
+PR575,Espátula Plástico,63,422.58,Pintura,Estante A5
+PR576,Fusible Rojo,447,gratis,Electricidad,Estante D2
+PR577,Pala Pequeño,301,390.98,Jardinería,Estante E8
+PR578,Destornillador Acero,133,157.16,Herramientas,Estante F6
+PR579,Brocha Espuma,366,175.54,Pintura,Estante D6
+PR580,Producto Standard,349,769.6,,Estante D9
+PR581,"Junta 1/2""",449,962.68,Fontanería,Estante A7
+PR582,Cable UTP,933,728.62,Electrónica,Estante F4
+PR583,Condensador Coaxial,426,7.58,Electrónica,Estante D4
+PR584,"Sifón 3/4""",543,228.95,Fontanería,Estante C9
+PR585,Espátula 5cm,789,-0.5,Pintura,Desconocido
+PR586,"Sifón 3/4""",60,980.07,Fontanería,Estante D7
+PR587,Conector Rojo,9,900.31,Electricidad,Estante B1
+PR588,Espátula Plástico,909,649.11,Pintura,Estante C2
+PR589,Producto Standard,1000,341.37,Otro,Estante A2
+PR590,Producto Standard,862,627.36,Otro,Estante A4
+PR591,Interruptor Coaxial,596,894.44,Electrónica,Estante D8
+PR592,Pala Profesional,732,737.77,Jardinería,Estante D7
+PR593,Destornillador Acero,,476.78,Herramientas,Estante C6
+PR594,Conector Amarillo,434,689.33,Electricidad,Estante F2
+PR595,Válvula Flexible,121,455.98,Fontanería,Almacén
+PR596,Martillo Acero,297,,Herramientas,Estante C6
+PR,Brocha Espuma,221,739.92,Pintura,safe
+PR598,Perno Hexagonal,487,833.85,Ferretería,Estante A9
+PR599,Lija 5cm,681,387.85,Pintura,Estante C4
+PR600,Rodillo Metal,791,561.48,Pintura,Estante D9
+PR601,Producto Standard,959,962.41,,Estante B5
+PR602,Espátula Plástico,24,181.33,Pintura,military
+,Teja 25kg,158,407.87,Construcción,Estante E4
+,Grifo Cobre,265,827.91,Fontanería,Estante B4
+PR605,Tijeras Plástico,567,484.69,Jardinería,Estante B6
+PR606,Perno Inoxidable,129,407.34,Ferretería,article
+PR607,Válvula Cobre,569,2.0,Fontanería,Estante F9
+PR608XX,Grifo Cobre,863,585.57,Fontanería,Estante A3
+PR609,LED 220V,900,610.83,Electrónica,Estante C3
+PR610,Llave 15cm,471,329.13,Herramientas,Estante A9
+PR611,Tornillo Allen,714,762.7,Ferretería,Estante F6
+PR612,LED 10A,367,839.31,Electrónica,Estante A1
+PR613,Llave,777,921.48,Herramientas,Estante A6
+PR614,Cemento 25kg,,707.26,Construcción,Estante B4
+PR615,Portalámparas Amarillo,757,682.7,Electricidad,Estante A5
+PR616,Interruptor 5m,695,,Electrónica,Estante D3
+PR617,Producto Standard,697,496.08,sister,Estante A3
+PR618XX,reveal,84,807.87,Jardinería,Estante B6
+PR619,Caja Aislante,100,-0.5,Electricidad,Estante E5
+PR620,Viga Hueco,533,943.6,Construcción,Estante E4
+PR621,Interruptor UTP,912,65.96,Electrónica,Estante F7
+PR622,Viga,573,1424.97,Construcción,Perdido
+PR623,Clavo Inoxidable,667,783.15,Ferretería,Estante C4
+PR624,Interruptor Coaxial,130,257.03,Electrónica,Estante F2
+PR625,Tubo,447,652.05,Fontanería,Estante E2
+PR626,"Grifo 1/2""",674,58.26,Fontanería,Estante F9
+PR627,Tuerca M8,350,476.25,Ferretería,Estante D3
+PR628,Sierra 300g,108,789.4,Herramientas,Almacén
+PR629,Rastrillo Grande,385,185.06,Jardinería,Estante C6
+,Producto Standard,-1,284.82,Otro,Estante B8
+PR631,especially,933,831.61,Herramientas,Estante E6
+PR632,Resistor 5m,964,799.22,Electrónica,Estante D1
+PR633,Resistor 10A,326,977.0,Electrónica,Estante A3
+PR634,Pala Plástico,287,851.65,Jardinería,Estante D5
+PR635,Interruptor,770,751.39,Electrónica,Estante D7
+PR636,Sierra 300g,596,921.26,Herramientas,Estante A3
+PR637,Regadera Pequeño,958,255.27,Jardinería,
+PR638,Martillo 300g,443,804.7,Herramientas,Estante C7
+PR639,Producto Standard,949,119.47,heavy,Estante D8
+PR640,Pala Grande,619,998.41,Jardinería,Estante F3
+PR641,Arena Reforzado,842,655.65,Construcción,Estante D6
+PR642,Válvula Cobre,602,757.86,Fontanería,Estante D3
+PR643,Resistor 10A,461,31.07,Electrónica,Estante A9
+PR644,Arandela Allen,708,326.75,Ferretería,
+PR645,Grifo Flexible,401,205.0,Fontanería,Estante D8
+PR646,Espátula Espuma,-1,178.46,Pintura,Estante E3
+PR647,Sifón Flexible,-1,12.04,Fontanería,Estante C9
+PR648,LED Coaxial,211,818.08,Electrónica,Estante B2
+PR649,Teja Macizo,N/A,824.76,Construcción,Estante B7
+PR650,Espátula,,842.8,Pintura,Estante C8
+PR651,Válvula Cobre,675,569.05,Fontanería,Estante A3
+PR652,"Junta 3/4""",422,553.27,Fontanería,Estante A5
+PR653,Destornillador 300g,,746.21,Herramientas,Estante C8
+PR654,Producto Standard,85,243.05,Otro,Estante A9
+PR655,Cemento Macizo,548,169.28,Construcción,Estante A1
+PR656,model,222,48.71,Fontanería,Estante D7
+PR657,Condensador UTP,786,250.45,Electrónica,Estante B4
+,Producto Standard,904,gratis,impact,Estante A3
+PR659,Condensador Coaxial,405,121.68,Electrónica,Estante C5
+PR660,Arandela,226,,Ferretería,Almacén
+PR661,Rodillo Metal,983,1162.18,Pintura,Estante F5
+PR662,Alicate Acero,624,449.46,Herramientas,Estante F3
+PR663,Perno M8,776,80.31,Ferretería,Estante D5
+PR664,Tubo Cobre,337,318.22,Fontanería,Estante A3
+PR665,Portalámparas Rojo,211,906.73,Electricidad,Estante B7
+PR666,Rastrillo Plástico,,gratis,Jardinería,Estante A9
+PR667,Producto Standard,251,606.25,Varios,Estante E1
+PR668,Rastrillo,408,471.24,Jardinería,Estante E4
+PR669,Sifón,875,,Fontanería,Estante B1
+PR670,Sifón Flexible,74,715.15,Fontanería,Estante B4
+PR671,Producto Standard,316,588.72,Otro,Estante A3
+PR672,Interruptor 5m,770,510.1,Electrónica,Estante E9
+PR673,Clavo M6,371,676.75,Ferretería,Estante E6
+PR674,Brocha Cerda,-1,916.97,Pintura,Estante E2
+PR675,Resistor 10A,310,533.67,Electrónica,Estante E2
+PR676,Fusible Rojo,276,930.09,Electricidad,Estante C2
+PR677,Producto,428,654.87,Varios,Estante B2
+PR678,"Válvula 1/2""",834,201.74,Fontanería,Estante F7
+PR679,Viga Hueco,171,-0.5,Construcción,Estante C4
+PR680,Producto,979,-0.5,Varios,environment
+PR681,Portalámparas Rojo,345,890.26,Electricidad,Estante F8
+PR682,Llave 15cm,4,698.61,Herramientas,Estante A9
+PR683,Producto Standard,634,869.98,,Estante E7
+PR684,Martillo 300g,497,612.98,Herramientas,Perdido
+PR685,Rodillo Cerda,891,572.32,Pintura,Estante D6
+PR686,Producto Standard,457,482.69,medical,Estante B7
+PR687,Cable 10A,226,666.27,Electrónica,Estante E7
+PR688,Sifón,893,576.4,Fontanería,Estante A5
+PR689,Cinta Azul,229,291.69,Electricidad,Estante C4
+PR690,Manguera Grande,591,311.49,Jardinería,Estante B4
+PR691,Portalámparas 10m,617,107.48,Electricidad,Perdido
+PR692,Viga 25kg,682,827.92,Construcción,Desconocido
+PR693,Interruptor 10A,990,981.16,Electrónica,Estante F8
+PR694,Manguera Pequeño,307,659.59,Jardinería,Estante A2
+PR695,Llave 300g,muchos,923.14,Herramientas,Estante D9
+PR696,Junta PVC,168,442.44,Fontanería,Estante B1
+PR697,Manguera Plástico,880,950.45,Jardinería,Estante F9
+PR698XX,Tuerca Inoxidable,608,149.42,Ferretería,Estante B7
+PR699,Producto Standard,815,90.52,Varios,Estante F8
+PR700,Viga Hueco,657,510.24,Construcción,place
+PR701,Rodillo Plástico,720,571.85,Pintura,
+PR702,Tubo Flexible,532,539.44,Fontanería,Estante E6
+PR703,Manguera Metal,,123.92,Jardinería,Estante B5
+PR704,Cable,306,544.88,Electrónica,Estante E7
+PR705,Producto Standard,536,996.8,Otro,Estante D6
+PR706,Cable 5m,221,602.54,Electrónica,Estante C5
+PR707,Portalámparas Azul,968,425.92,Electricidad,Estante D8
+PR708,Cemento Termoaislante,430,317.04,Construcción,Estante C7
+,Producto Standard,372,778.29,Varios,Estante F7
+PR,Clavo M6,746,589.24,Ferretería,Estante A7
+PR711,Teja,muchos,390.17,Construcción,Estante F3
+PR712,Caja 10m,147,735.69,Electricidad,Desconocido
+PR713,Rastrillo Grande,515,952.66,Jardinería,Estante F1
+PR714,Manguera Grande,650,-0.5,Jardinería,Estante A4
+PR715,them,694,731.07,Otro,Estante D6
+PR716,Interruptor UTP,720,345.72,Electrónica,Estante E7
+PR717,Tuerca Inoxidable,180,,Ferretería,Estante D1
+PR718,Tubo Flexible,879,299.88,Fontanería,Estante B5
+PR719,Producto Standard,914,488.78,history,Estante E4
+PR720,Ladrillo Reforzado,104,198.35,Construcción,Estante B1
+PR721,Brocha Espuma,187,270.21,Pintura,Estante E7
+PR722,Sifón,727,190.38,Fontanería,Perdido
+PR723,Destornillador 15cm,501,800.02,Herramientas,Estante C3
+PR724,Cinta Aislante,353,767.62,Electricidad,Estante E8
+PR725,Fusible Azul,,153.34,Electricidad,Estante B7
+PR726,Resistor 10A,830,730.73,Electrónica,Estante B4
+PR727,"Válvula 3/4""",437,-0.5,Fontanería,Estante D7
+PR728,Rastrillo Plástico,276,943.06,Jardinería,Estante B7
+PR729,Tornillo,218,280.88,Ferretería,Estante D1
+PR730,Bandeja Metal,134,741.55,Pintura,Estante F5
+PR731,Alicate Acero,761,42.0,Herramientas,Estante E6
+PR732,Manguera,352,474.72,Jardinería,Estante D8
+PR733,Clavo Inoxidable,917,630.23,Ferretería,Estante D1
+PR734,Producto Standard,979,794.6,where,Estante F3
+PR735,Espátula Metal,799,607.61,Pintura,Estante A1
+PR736,Manguera Pequeño,738,304.11,Jardinería,Estante F1
+PR737,Cable Coaxial,285,271.16,Electrónica,Estante E6
+PR738,Manguera Grande,970,549.73,Jardinería,Estante C9
+PR739,establish,749,177.56,Construcción,Estante D8
+PR740,LED 220V,837,324.94,Electrónica,Estante E5
+PR741,Caja 10m,96,459.93,Electricidad,Estante B3
+PR742,probably,182,687.68,Pintura,Estante B1
+PR743,Producto Standard,387,110.93,Varios,
+PR744,Interruptor,981,542.83,Electrónica,Estante F1
+PR745,Producto Standard,58,268.19,Varios,Estante A2
+PR746,Cable Coaxial,N/A,gratis,Electrónica,Estante C1
+PR747,Fusible 10m,979,77.21,Electricidad,Estante C6
+PR748,Interruptor 5m,696,893.22,Electrónica,Estante E4
+PR749,Alicate 15cm,729,789.07,Herramientas,Estante B1
+PR750,Sifón Cobre,116,959.63,Fontanería,Estante A6
+PR751,Sifón Cobre,424,636.97,Fontanería,Estante E6
+PR752,Cinta Amarillo,394,gratis,Electricidad,Estante B7
+PR753,Manguera Metal,62,361.5,Jardinería,Estante F5
+PR754,Teja Macizo,230,gratis,Construcción,Estante A2
+PR755,Fusible Amarillo,31,142.14,Electricidad,Estante A1
+PR756,Caja Amarillo,307,722.83,Electricidad,Estante E6
+PR757,land,516,396.99,Construcción,Estante D3
+PR758,Teja Macizo,95,977.95,Construcción,Estante B5
+PR759,Tuerca Inoxidable,837,477.94,Ferretería,Estante C8
+PR760,"Sifón 1/2""",798,29.02,Fontanería,Estante D8
+PR761,Pala Plástico,88,565.23,Jardinería,Estante F6
+PR762,Arandela,290,500.72,Ferretería,Estante C8
+PR763,Tubo Flexible,827,24.66,Fontanería,Estante D4
+PR764,Tuerca M6,238,807.67,Ferretería,Estante F5
+PR765,Destornillador 300g,,997.01,Herramientas,Estante B1
+,Brocha 5cm,466,934.12,Pintura,Estante B9
+PR,Llave 15cm,453,141.31,Herramientas,Estante E1
+PR768,Llave Profesional,525,952.09,Herramientas,Estante E8
+PR769,Rodillo Cerda,575,,Pintura,Estante E1
+PR770,LED 10A,922,110.01,Electrónica,Estante A7
+PR771,Caja Rojo,498,741.54,Electricidad,Estante D3
+PR772,Producto Standard,793,936.52,Varios,Estante D1
+,Rastrillo Plástico,281,299.04,Jardinería,Estante C9
+PR774,Ladrillo,351,297.61,Construcción,Estante C9
+PR775,Sifón Cobre,575,597.53,Fontanería,style
+PR776,Alicate,957,864.44,Herramientas,Estante E8
+PR777,Tuerca Inoxidable,N/A,188.47,Ferretería,Estante F5
+PR778,Caja Amarillo,380,17.18,Electricidad,Estante D6
+PR779,LED 220V,998,114.27,Electrónica,Estante D1
+PR780,Sifón Cobre,719,925.21,Fontanería,Estante A6
+,Interruptor 220V,103,503.86,Electrónica,Estante E7
+PR782,Cinta Azul,360,914.12,Electricidad,Estante F8
+PR783,Caja Rojo,925,415.3,Electricidad,Estante C9
+PR784,Producto Standard,983,430.59,,Estante C8
+PR785,Conector Azul,178,318.81,Electricidad,Estante B6
+PR786,Producto Standard,163,204.56,Varios,Perdido
+PR787,memory,465,777.81,Varios,Estante E6
+PR788,Cemento Reforzado,676,gratis,Construcción,Estante E5
+PR789,Interruptor 5m,96,gratis,Electrónica,Estante D5
+,Caja Rojo,462,180.63,Electricidad,Almacén
+PR791,Arandela Inoxidable,6,741.96,Ferretería,Estante B4
+PR792,Tuerca M8,N/A,728.02,Ferretería,Estante B9
+PR793,Pala Pequeño,508,946.4,Jardinería,Estante B8
+PR794,Ladrillo 25kg,211,488.34,Construcción,Estante D1
+PR795,Teja Macizo,383,819.52,Construcción,Estante A3
+PR796,Arena Termoaislante,31,809.23,Construcción,Estante B3
+PR797,Condensador UTP,-1,214.56,Electrónica,Estante C3
+PR798,Interruptor 220V,623,807.62,Electrónica,Estante E1
+PR799,Cinta 10m,,990.27,Electricidad,Estante A8
+PR800,Destornillador Ergonómico,934,131.93,Herramientas,Estante A3
+PR801,Tornillo,,275.4,Ferretería,Estante C8
+PR802,Producto Standard,657,122.29,Otro,Estante E4
+,Regadera Pequeño,91,902.37,Jardinería,Estante D8
+PR804,Tornillo M6,705,812.67,Ferretería,Estante B2
+PR805,Bandeja Plástico,685,528.06,Pintura,Estante E7
+PR806,Viga 25kg,362,873.0,Construcción,Estante F3
+PR807XX,Cable 10A,193,341.11,Electrónica,Estante F4
+PR808,Alicate Ergonómico,134,364.28,Herramientas,Estante E4
+PR809,Portalámparas Amarillo,151,108.07,Electricidad,Estante A2
+PR810,Sifón PVC,564,gratis,Fontanería,Estante D1
+PR811,Arandela,750,194.74,Ferretería,Estante B3
+PR812,Rodillo 5cm,55,575.66,Pintura,Estante D8
+PR813,Rastrillo Grande,176,348.29,Jardinería,Estante E3
+PR814,Perno M8,698,1093.68,Ferretería,Estante A1
+PR815,Caja 10m,874,1176.08,Electricidad,Estante D5
+PR816,Rodillo Cerda,172,775.48,Pintura,Desconocido
+PR817,Alicate 300g,muchos,334.41,Herramientas,Estante E7
+PR818,bag,877,994.09,Pintura,Estante A2
+PR819,Fusible Aislante,899,545.37,Electricidad,Estante D7
+PR820,Llave 15cm,43,702.13,Herramientas,Estante A8
+PR821,Bandeja Plástico,151,151.08,Pintura,Estante E4
+PR822,Grifo,465,-0.5,Fontanería,Desconocido
+PR823,Producto,900,859.15,Otro,Estante F5
+PR824,Resistor 220V,298,473.7,Electrónica,Estante F7
+PR825,Fusible Amarillo,578,876.06,Electricidad,Estante A9
+PR826,Rastrillo Plástico,950,546.28,Jardinería,Estante F9
+PR827,Grifo PVC,438,961.49,Fontanería,Estante D9
+PR,Producto Standard,557,877.93,low,Perdido
+PR829,Perno M6,666,594.75,Ferretería,Estante E1
+PR830,Martillo Acero,529,740.68,Herramientas,Estante B6
+PR831,Grifo Cobre,206,1.04,Fontanería,Estante A8
+PR832,Rastrillo,401,1060.91,Jardinería,Estante B3
+PR833,Viga Reforzado,23,818.73,Construcción,Estante B2
+PR834,Pala Profesional,684,386.43,Jardinería,Estante D3
+PR835,Portalámparas Aislante,35,893.33,Electricidad,Estante A3
+PR836,Llave Acero,367,861.16,Herramientas,Estante F1
+PR837,Resistor 5m,880,279.06,Electrónica,Estante C2
+PR838,LED Coaxial,950,659.25,Electrónica,Estante E9
+PR839,Llave,N/A,665.6,Herramientas,Estante E8
+PR840,Regadera Pequeño,431,62.86,Jardinería,Estante A3
+PR841,Condensador Coaxial,716,134.08,Electrónica,Estante D9
+PR842,Arena Reforzado,829,86.93,Construcción,
+PR843,"Grifo 1/2""",699,911.08,Fontanería,Estante D5
+PR844,Rastrillo Profesional,821,1213.76,Jardinería,Estante E1
+PR845,Producto Standard,muchos,252.13,Otro,Estante A5
+PR846,Tubo Flexible,513,619.03,Fontanería,Estante A8
+PR847,Ladrillo 25kg,61,547.54,Construcción,Estante F4
+PR848,Tornillo Inoxidable,784,346.5,Ferretería,Perdido
+PR849,LED UTP,509,650.69,Electrónica,Estante C2
+,Manguera Profesional,389,738.19,Jardinería,Estante A4
+PR851,Cinta Aislante,919,903.65,Electricidad,Estante C4
+PR852,Tornillo Inoxidable,822,-0.5,Ferretería,Almacén
+PR853,Teja 25kg,408,123.25,Construcción,Desconocido
+PR854,Pala Pequeño,965,551.85,Jardinería,Estante B7
+PR855,Teja Reforzado,637,79.37,Construcción,Estante F9
+PR856,Tijeras Metal,N/A,650.26,Jardinería,Estante A8
+PR857,Producto Standard,625,19.83,,Estante D2
+PR858,Producto Standard,357,910.14,Varios,Estante C4
+PR859,week,637,428.12,Construcción,Estante F3
+PR860,Condensador 10A,737,519.39,Electrónica,Estante C7
+PR861,Manguera Grande,N/A,296.53,Jardinería,Estante A3
+PR862,Alicate Ergonómico,muchos,321.67,Herramientas,Estante B3
+PR863,Clavo,654,218.62,Ferretería,
+PR864,Llave 15cm,507,630.71,Herramientas,Estante E4
+PR865,Manguera Pequeño,43,228.72,Jardinería,Estante B8
+PR866,sort,112,-0.5,Ferretería,Estante C3
+PR867XX,Portalámparas Rojo,418,375.34,Electricidad,Estante C1
+PR868,"Grifo 1/2""",217,511.29,Fontanería,Estante D6
+PR869,truth,391,649.56,Herramientas,Estante B6
+PR870,Fusible Aislante,676,441.58,Electricidad,Estante F9
+PR871,Pala Plástico,456,880.35,Jardinería,Estante C5
+PR872,LED 10A,848,126.16,Electrónica,Estante F5
+PR873,Grifo Cobre,152,633.0,Fontanería,Estante B3
+PR874,Clavo Allen,130,834.02,Ferretería,Almacén
+PR875,Junta PVC,714,712.27,Fontanería,Estante F8
+PR876,Cable,973,409.47,Electrónica,Estante F9
+PR877,Brocha Metal,-1,370.5,Pintura,Estante C7
+PR878,"Junta 3/4""",350,1258.84,Fontanería,Estante C7
+PR879,"Tubo 3/4""",285,615.86,Fontanería,Desconocido
+PR880,Viga 25kg,772,232.44,Construcción,Estante A7
+,Junta Cobre,27,282.56,Fontanería,Estante D1
+PR882,"Grifo 1/2""",443,87.78,Fontanería,Estante B9
+PR883,Cable UTP,520,454.01,Electrónica,Estante E8
+PR884,Martillo Ergonómico,862,837.8,Herramientas,Estante E5
+PR885,Rastrillo Metal,156,187.92,Jardinería,Estante A9
+PR886,Resistor,1000,710.28,Electrónica,Desconocido
+PR887,Rastrillo Grande,897,485.57,Jardinería,Estante C8
+PR888,Brocha Espuma,458,662.76,Pintura,Estante D3
+PR889,LED 10A,885,412.59,Electrónica,Estante C1
+PR890,Rastrillo,268,411.82,Jardinería,Estante D1
+PR891,Tuerca Hexagonal,227,167.37,Ferretería,Estante E5
+PR892,Sierra,822,780.65,Herramientas,Estante C5
+PR893,Interruptor Coaxial,406,230.11,Electrónica,Estante C6
+PR894,evidence,1000,398.54,Jardinería,Estante B2
+PR895,Tuerca,833,655.62,Ferretería,Estante F3
+PR896,LED,555,152.7,Electrónica,Estante F6
+PR897,enjoy,208,1484.63,Construcción,Estante D1
+PR898,Producto Standard,509,951.51,executive,Estante F1
+PR899,Manguera Grande,112,333.1,Jardinería,Estante A6
+PR900,Producto Standard,485,839.81,Varios,Estante A4
+PR901,develop,614,6.57,Construcción,Estante F4
+PR902,Bandeja Plástico,527,739.95,Pintura,Estante A7
+PR903,Cable Coaxial,891,40.02,Electrónica,Estante B2
+PR904,effort,302,880.35,Pintura,Estante C3
+PR905,Destornillador Profesional,975,519.86,Herramientas,Estante D3
+PR906,Destornillador 300g,,471.02,Herramientas,Estante A1
+PR907,Manguera Plástico,609,351.1,Jardinería,Estante B6
+PR908,Arandela Allen,314,767.22,Ferretería,Estante D9
+PR,Manguera Grande,130,587.73,Jardinería,Estante C4
+PR910,Teja Macizo,N/A,92.25,Construcción,Estante B1
+PR911,Bandeja,141,440.25,Pintura,Estante C3
+PR912,LED 10A,859,531.15,Electrónica,Estante F9
+PR913,Grifo Flexible,712,685.68,Fontanería,Estante D1
+PR914,Sifón Cobre,574,920.69,Fontanería,Estante C6
+PR915,culture,97,915.89,Ferretería,Estante A1
+PR916,Clavo Hexagonal,59,823.5,Ferretería,Estante D4
+PR917,Lija Metal,40,613.31,Pintura,Estante F1
+,Tubo PVC,1000,852.72,Fontanería,Estante F3
+PR919,Producto Standard,964,416.96,Otro,Estante A4
+PR920,small,706,173.8,Varios,Estante F9
+PR921,Arena Hueco,475,gratis,Construcción,Estante B3
+PR922,Tornillo M6,966,837.47,Ferretería,Estante B4
+PR923,"Sifón 3/4""",424,189.06,Fontanería,Estante B3
+PR924,Arena,373,642.18,Construcción,Estante E5
+PR925,Sifón Cobre,831,289.4,Fontanería,Estante D6
+PR,Arena Hueco,647,140.68,Construcción,Estante C6
+PR927,Tornillo M6,487,648.23,Ferretería,Estante C5
+PR928,Rodillo Metal,446,474.1,Pintura,Estante F2
+PR929,Llave Profesional,923,108.75,Herramientas,Estante B9
+PR930,Caja Amarillo,966,951.54,Electricidad,Estante A9
+PR931,Martillo Profesional,470,461.13,Herramientas,Estante B4
+PR932,Cemento Hueco,158,845.82,Construcción,Estante D4
+PR933,LED 10A,724,917.03,Electrónica,Estante C3
+PR934,Grifo Cobre,547,-0.5,Fontanería,Estante E3
+PR935,body,408,645.93,Jardinería,Estante B4
+PR936,Producto Standard,397,481.17,Otro,Estante C9
+PR937,Fusible Aislante,415,13.21,Electricidad,Estante E1
+PR938XX,Lija Espuma,119,802.62,Pintura,Estante C6
+PR939,Alicate 300g,393,80.93,Herramientas,community
+PR940,Lija Plástico,52,686.7,Pintura,Estante C4
+PR941,Tuerca Allen,652,-0.5,Ferretería,Estante C8
+PR942,Resistor 10A,354,689.3,Electrónica,Estante F8
+PR943,Bandeja,742,882.15,Pintura,Estante F2
+PR944,Producto Standard,444,793.85,Otro,Estante C2
+PR945,Manguera Pequeño,706,277.58,Jardinería,Estante E3
+PR946,Grifo,801,130.64,Fontanería,Estante E3
+PR,Martillo Ergonómico,730,461.18,Herramientas,Estante E3
+PR948,Conector,355,152.63,Electricidad,Estante D5
+PR949,Grifo Flexible,647,984.96,Fontanería,manager
+PR950,group,171,565.33,Construcción,Estante F4
+PR951,Producto Standard,972,97.88,Otro,Estante A8
+PR952,"Sifón 3/4""",614,770.73,Fontanería,Estante E7
+PR953,Sierra 300g,294,450.01,Herramientas,Estante B3
+PR954,Arandela M6,669,418.85,Ferretería,Estante A2
+PR955,Junta Cobre,333,167.29,Fontanería,Estante E8
+PR956,Producto Standard,741,176.04,Otro,Estante B4
+,Cemento Termoaislante,248,972.83,Construcción,Estante A8
+PR958,Destornillador Acero,-1,406.94,Herramientas,Estante D4
+PR959,Condensador 220V,547,439.08,Electrónica,Estante A4
+PR960,Fusible Amarillo,451,124.93,Electricidad,Estante B8
+PR961,Condensador Coaxial,216,330.7,Electrónica,Estante D3
+PR962,Bandeja Espuma,717,276.02,Pintura,Almacén
+PR963,Teja Macizo,313,440.42,Construcción,Estante F3
+PR964,"Grifo 3/4""",N/A,149.22,Fontanería,Desconocido
+PR965,Caja Amarillo,322,378.6,Electricidad,Estante E6
+PR966,Lija,351,207.22,Pintura,Estante E3
+PR967,Condensador UTP,867,787.9,Electrónica,Estante F3
+PR968,Tornillo Hexagonal,548,538.19,Ferretería,
+PR969,Regadera Metal,735,41.19,Jardinería,Estante D9
+PR970,Manguera Grande,N/A,761.92,Jardinería,Estante A7
+PR971,Tornillo M6,103,215.78,Ferretería,Estante E1
+PR972,Producto Standard,651,456.8,help,Perdido
+PR973,Bandeja Espuma,545,276.01,Pintura,Estante C2
+PR974,Resistor 220V,168,760.68,Electrónica,Estante A7
+PR975,Espátula 5cm,219,306.08,Pintura,Estante D4
+PR976,Cemento Macizo,406,852.5,Construcción,Estante B2
+PR977,Lija Espuma,877,371.42,Pintura,Estante F2
+PR978,Llave Acero,414,gratis,Herramientas,Estante F5
+PR979,Pala Grande,392,560.41,Jardinería,Estante B5
+PR980,Rodillo,741,721.54,Pintura,Estante A3
+PR981,Cinta Amarillo,104,,Electricidad,Estante C1
+PR982,Tubo Cobre,895,299.56,Fontanería,Estante A6
+PR983,Alicate Acero,789,,Herramientas,Estante C6
+PR984,Brocha Plástico,204,704.36,Pintura,Estante F3
+PR985,"Sifón 1/2""",62,512.75,Fontanería,Perdido
+PR986,Llave Acero,579,-0.5,Herramientas,Estante F7
+PR987,LED UTP,442,466.25,Electrónica,Estante F3
+PR988,Alicate 300g,412,7.35,Herramientas,Estante A2
+PR989,Producto Standard,670,770.16,Otro,Estante C5
+PR990,"Válvula 1/2""",968,779.68,Fontanería,Estante A5
+PR991,Destornillador 15cm,942,355.99,Herramientas,Estante D2
+PR,Cinta,204,381.12,Electricidad,Estante A6
+PR993,Resistor 220V,325,211.12,Electrónica,whether
+PR994,Viga,431,857.64,Construcción,Estante C2
+PR995,Portalámparas Azul,17,275.44,Electricidad,Estante C3
+PR996,Producto Standard,63,210.62,Varios,Estante C1
+PR997,Cinta 10m,830,365.7,Electricidad,Estante F6
+PR998,Lija Espuma,30,332.25,Pintura,Estante A3
+PR999,Tubo Flexible,103,-0.5,Fontanería,Estante A5
+PR1000,Lija Cerda,829,312.12,Pintura,Estante B8

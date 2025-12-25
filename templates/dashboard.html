@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-2xl font-semibold mb-4">Resumen del Inventario</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+  {% for key, value in summary.items() %}
+  <div class="bg-white rounded-xl shadow p-4 text-center">
+    <h3 class="text-gray-500 text-sm uppercase">{{ key }}</h3>
+    <p class="text-2xl font-bold mt-2">{{ value }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<h3 class="text-xl font-semibold mb-3">Visualizaciones</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  {% for chart in charts %}
+  <div class="bg-white rounded-xl shadow p-4">
+    <img src="{{ url_for('static', path='../reports/' + chart) }}" alt="{{ chart }}" class="w-full rounded-md">
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

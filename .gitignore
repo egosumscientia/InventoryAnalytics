@@ -1,0 +1,65 @@
+# 🧠 --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pdb
+.Python
+env/
+venv/
+ENV/
+venv*/
+pip-wheel-metadata/
+*.log
+*.pot
+*.pyc
+*.pkl
+*.pickle
+*.sqlite3
+
+# 🧩 --- FastAPI / Jinja ---
+web/__pycache__/
+web/static/.DS_Store
+web/templates/.DS_Store
+
+# 📦 --- Entornos virtuales ---
+.venv/
+.venv*/
+.env
+.env.*
+venv/
+venv*/
+env.bak/
+
+# 📊 --- Archivos de datos y reportes ---
+data/*.csv
+data/*.xlsx
+data/*.ods
+reports/*.png
+reports/*.jpg
+reports/*.svg
+reports/*.pdf
+
+# (Si quieres conservar ejemplos pequeños, ponlos en data/sample/)
+!data/sample/*.csv
+
+# 🔬 --- Notebooks / temporales ---
+*.ipynb_checkpoints
+*.nbconvert.ipynb
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+
+# 🚀 --- IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# 🧰 ---

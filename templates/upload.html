@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow">
+  <h2 class="text-xl font-semibold mb-4 text-center">Sube tu archivo de inventario</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data" class="flex flex-col gap-4">
+    <input type="file" name="file" accept=".csv,.xlsx,.ods" required
+           class="border border-gray-300 rounded p-2">
+    <button type="submit"
+      class="bg-blue-600 text-white rounded py-2 hover:bg-blue-700">
+      Procesar archivo
+    </button>
+  </form>
+</div>
+{% endblock %}
