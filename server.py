@@ -1,13 +1,13 @@
 import json
 
 import pandas as pd
-from fastapi import FastAPI, Request, UploadFile
+from fastapi import FastAPI, HTTPException, Query, Request, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from config import DATA_PATH, REPORTS_PATH
-from scripts import data_analysis, data_clean, data_load
+from scripts import business_analysis, data_analysis, data_clean, data_load
 
 app = FastAPI(title="AI Inventory Management")
 
@@ -16,6 +16,21 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 REPORTS_PATH.mkdir(parents=True, exist_ok=True)
 app.mount("/reports", StaticFiles(directory=str(REPORTS_PATH)), name="reports")
 templates = Jinja2Templates(directory="templates")
+
+
+def _load_clean_inventory() -> pd.DataFrame:
+    """
+    Centraliza la carga/limpieza para reutilizar en los endpoints de analisis.
+    """
+    try:
+        return business_analysis.load_clean_inventory()
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except Exception as exc:  # pragma: no cover - FastAPI maneja la respuesta
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error al preparar datos de inventario: {exc}",
+        )
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -81,3 +96,25 @@ async def upload_file(request: Request, file: UploadFile):
         "results.html",
         {"request": request, "filename": file.filename, "summary": summary},
     )
+
+
+@app.get("/analysis/abc")
+def analysis_abc():
+    df = _load_clean_inventory()
+    return business_analysis.abc_classification(df)
+
+
+@app.get("/analysis/alerts")
+def analysis_alerts(top: int = Query(10, ge=1, le=50)):
+    df = _load_clean_inventory()
+    return business_analysis.generar_alertas(df, top_n=top)
+
+
+@app.get("/analysis/what-if")
+def analysis_what_if(
+    categoria: str = Query(..., min_length=1),
+    porcentaje_reduccion: float = Query(..., gt=0),
+    top_n: int | None = Query(None, gt=0, le=1000),
+):
+    df = _load_clean_inventory()
+    return business_analysis.simular_what_if(df, categoria, porcentaje_reduccion, top_n=top_n)

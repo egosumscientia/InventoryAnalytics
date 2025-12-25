@@ -2,21 +2,326 @@
 {% block content %}
 <h2 class="text-2xl font-semibold mb-4">Resumen del Inventario</h2>
 
-<div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
   {% for key, value in summary.items() %}
   <div class="bg-white rounded-xl shadow p-4 text-center">
     <h3 class="text-gray-500 text-sm uppercase">{{ key }}</h3>
     <p class="text-2xl font-bold mt-2">{{ value }}</p>
   </div>
   {% endfor %}
+  <div class="bg-white rounded-xl shadow p-4 text-center" id="kpi-capital-riesgo">
+    <h3 class="text-gray-500 text-sm uppercase">Capital en Riesgo (%)</h3>
+    <p class="text-2xl font-bold mt-2 text-gray-700">...</p>
+  </div>
 </div>
 
 <h3 class="text-xl font-semibold mb-3">Visualizaciones</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
   {% for chart in charts %}
   <div class="bg-white rounded-xl shadow p-4">
     <img src="{{ url_for('reports', path=chart) }}" alt="{{ chart }}" class="w-full rounded-md">
   </div>
   {% endfor %}
 </div>
+
+<style>
+  .card-compact { padding: 16px; border-radius: 12px; }
+  .card-compact h3 { margin-bottom: 8px; }
+  .card-body-scroll { max-height: 22rem; overflow: auto; }
+  .table-compact th, .table-compact td { padding-top: 8px; padding-bottom: 8px; }
+</style>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch">
+  <section class="bg-white shadow card-compact col-span-1 lg:col-span-1 flex flex-col">
+    <div class="flex items-center justify-between mb-3">
+      <h3 class="text-lg font-semibold">Clasificacion ABC</h3>
+      <span id="abc-capital" class="text-sm text-gray-500">Cargando...</span>
+    </div>
+    <div class="overflow-x-auto flex-1 card-body-scroll">
+      <table class="min-w-full text-sm table-compact" id="abc-table">
+        <thead>
+          <tr class="text-left text-gray-500">
+            <th class="py-2 pr-2">Codigo</th>
+            <th class="py-2 pr-2">Nombre</th>
+            <th class="py-2 pr-2">Clase</th>
+            <th class="py-2 pr-2 text-right">Valor</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100"></tbody>
+      </table>
+    </div>
+    <p id="abc-error" class="text-sm text-red-600 mt-3 hidden"></p>
+  </section>
+
+  <section class="bg-white shadow card-compact col-span-1 lg:col-span-1 flex flex-col">
+    <div class="flex items-center justify-between mb-3">
+      <h3 class="text-lg font-semibold">Alertas</h3>
+      <div class="flex items-center space-x-2 text-sm">
+        <label for="alerts-filter" class="text-gray-500">Filtro</label>
+        <select id="alerts-filter" class="border rounded px-2 py-1 focus:outline-none focus:ring text-gray-700">
+          <option value="ALL">Todas</option>
+          <option value="SOBRE_STOCK">Sobre stock</option>
+          <option value="RIESGO_QUIEBRE">Riesgo quiebre</option>
+          <option value="CAPITAL_MUERTO">Capital muerto</option>
+        </select>
+      </div>
+    </div>
+    <div id="alerts-list" class="space-y-3 text-sm text-gray-800 overflow-auto flex-1 pr-1 card-body-scroll">
+      <p class="text-gray-500">Cargando alertas...</p>
+    </div>
+    <div class="flex items-center justify-between pt-3 text-sm text-gray-600">
+      <button id="alerts-prev" class="px-3 py-1 border rounded disabled:opacity-40">Anterior</button>
+      <span id="alerts-page">1/1</span>
+      <button id="alerts-next" class="px-3 py-1 border rounded disabled:opacity-40">Siguiente</button>
+    </div>
+    <p id="alerts-error" class="text-sm text-red-600 mt-3 hidden"></p>
+  </section>
+
+  <section class="bg-white shadow card-compact col-span-1 lg:col-span-1 flex flex-col">
+    <h3 class="text-lg font-semibold mb-3">Simulacion What-if</h3>
+    <form id="whatif-form" class="space-y-3">
+      <div>
+        <label class="block text-sm text-gray-600">Categoria</label>
+        <input id="wi-categoria" type="text" required class="mt-1 w-full border rounded px-3 py-2 focus:outline-none focus:ring" placeholder="Ej: Ferreteria">
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block text-sm text-gray-600">Reduccion (%)</label>
+          <input id="wi-reduccion" type="number" min="0" max="100" step="1" value="10" required class="mt-1 w-full border rounded px-3 py-2 focus:outline-none focus:ring">
+        </div>
+        <div>
+          <label class="block text-sm text-gray-600">Aplicar a top N (opcional)</label>
+          <input id="wi-topn" type="number" min="1" max="1000" step="1" class="mt-1 w-full border rounded px-3 py-2 focus:outline-none focus:ring" placeholder="Ej: 10">
+        </div>
+      </div>
+      <button type="submit" class="w-full bg-gray-900 text-white rounded py-2 hover:bg-gray-800">Calcular</button>
+    </form>
+    <div class="mt-4">
+      <div class="text-sm text-gray-600 mb-2">Categorias sugeridas</div>
+      <div id="whatif-suggested" class="flex flex-wrap gap-2 text-sm"></div>
+    </div>
+    <div id="whatif-result" class="mt-4 text-sm text-gray-800 space-y-1"></div>
+    <p id="whatif-error" class="text-sm text-red-600 mt-3 hidden"></p>
+  </section>
+</div>
+
+<script>
+  const moneyFmt = (value) => {
+    const n = Number(value) || 0;
+    return `$${n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  };
+
+  const pctFmt = (value) => `${Number(value || 0).toFixed(2)}%`;
+
+  async function loadABC() {
+    try {
+      const res = await fetch("/analysis/abc");
+      if (!res.ok) throw new Error("No se pudo obtener ABC");
+      const data = await res.json();
+      document.getElementById("abc-capital").textContent = `% capital clase A: ${pctFmt(data.capital_a_pct)}`;
+      window.__abcTotalValor = data.total_valor || 0;
+
+      const tbody = document.querySelector("#abc-table tbody");
+      tbody.innerHTML = "";
+      (data.detalle || []).slice(0, 5).forEach((item) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td class="py-2 pr-2 font-semibold">${item.codigo || "-"}</td>
+          <td class="py-2 pr-2 text-gray-700">${item.nombre || "-"}</td>
+          <td class="py-2 pr-2"><span class="px-2 py-1 rounded text-xs bg-gray-100 font-semibold">${item.clase_abc}</span></td>
+          <td class="py-2 pr-2 text-right">${moneyFmt(item.valor_total)}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+      if ((data.detalle || []).length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" class="py-2 text-gray-500">Sin datos de ABC.</td></tr>';
+      }
+      buildSuggestedCategories(data.detalle || []);
+    } catch (err) {
+      document.getElementById("abc-error").textContent = err.message;
+      document.getElementById("abc-error").classList.remove("hidden");
+    }
+  }
+
+  function buildSuggestedCategories(detalle) {
+    const container = document.getElementById("whatif-suggested");
+    container.innerHTML = "";
+    if (!detalle.length) {
+      container.innerHTML = '<span class="text-gray-500">Sin datos.</span>';
+      return;
+    }
+    const agregados = {};
+    detalle.forEach((item) => {
+      const cat = (item.categoria || "Sin categoria").toString();
+      agregados[cat] = (agregados[cat] || 0) + Number(item.valor_total || 0);
+    });
+    window.__catTotals = agregados;
+    const topCats = Object.entries(agregados)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5);
+    topCats.forEach(([cat]) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "px-3 py-1 rounded-full border text-gray-700 hover:bg-gray-100";
+      btn.textContent = cat;
+      btn.addEventListener("click", () => {
+        document.getElementById("wi-categoria").value = cat;
+      });
+      container.appendChild(btn);
+    });
+  }
+
+  async function loadAlerts() {
+    window.__alertsData = [];
+    try {
+      const res = await fetch("/analysis/alerts?top=50");
+      if (!res.ok) throw new Error("No se pudieron obtener alertas");
+      const data = await res.json();
+      window.__alertsData = data.alertas || [];
+      renderAlerts();
+      updateCapitalRiesgo();
+    } catch (err) {
+      document.getElementById("alerts-error").textContent = err.message;
+      document.getElementById("alerts-error").classList.remove("hidden");
+    }
+  }
+
+  function renderAlerts(page = 1) {
+    const perPage = 5;
+    const filtro = document.getElementById("alerts-filter").value;
+    const container = document.getElementById("alerts-list");
+    const all = window.__alertsData || [];
+    const filtered = filtro === "ALL" ? all : all.filter((a) => a.tipo === filtro);
+    const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+    const current = Math.min(Math.max(page, 1), totalPages);
+    const start = (current - 1) * perPage;
+    const slice = filtered.slice(start, start + perPage);
+
+    container.innerHTML = "";
+    slice.forEach((alerta) => {
+      const badgeColors = {
+        "SOBRE_STOCK": "bg-yellow-100 text-yellow-800",
+        "RIESGO_QUIEBRE": "bg-red-100 text-red-800",
+        "CAPITAL_MUERTO": "bg-blue-100 text-blue-800",
+      };
+      const badge = badgeColors[alerta.tipo] || "bg-gray-100 text-gray-800";
+      const sevColors = {
+        "Alta": "text-red-700",
+        "Media": "text-yellow-700",
+        "Baja": "text-green-700",
+      };
+      const sevClass = sevColors[alerta.severidad] || "text-gray-700";
+      const div = document.createElement("div");
+      div.className = "border border-gray-100 rounded p-3";
+      div.innerHTML = `
+        <div class="flex justify-between items-center mb-1">
+          <span class="font-semibold">${alerta.nombre || alerta.codigo || "Producto"}</span>
+          <span class="text-xs px-2 py-1 rounded ${badge}">${alerta.tipo}</span>
+        </div>
+        <div class="text-xs ${sevClass} font-semibold mb-1">Severidad: ${alerta.severidad || "-"}</div>
+        <div class="text-gray-600 text-xs mb-1">${alerta.detalle || ""}</div>
+        <div class="text-gray-800 text-sm">Stock: ${alerta.cantidad} | Valor: ${moneyFmt(alerta.valor_total)}</div>
+        <div class="text-xs text-gray-600 mt-1">${alerta.recomendacion || "Recomendacion: reducir stock gradualmente o revisar rotacion."}</div>
+      `;
+      container.appendChild(div);
+    });
+    if (slice.length === 0) {
+      container.innerHTML = '<p class="text-gray-500">Sin alertas generadas.</p>';
+    }
+    document.getElementById("alerts-page").textContent = `${current}/${totalPages}`;
+    document.getElementById("alerts-prev").disabled = current === 1;
+    document.getElementById("alerts-next").disabled = current === totalPages;
+    window.__alertsPage = current;
+    window.__alertsTotalPages = totalPages;
+  }
+
+  function changeAlertsPage(delta) {
+    const nextPage = (window.__alertsPage || 1) + delta;
+    renderAlerts(nextPage);
+  }
+
+  function updateCapitalRiesgo() {
+    const kpi = document.querySelector("#kpi-capital-riesgo p");
+    if (!window.__alertsData || window.__alertsData.length === 0 || !window.__abcTotalValor) {
+      kpi.textContent = "...";
+      return;
+    }
+    const sumaAlertas = window.__alertsData.reduce((acc, a) => acc + (Number(a.valor_total) || 0), 0);
+    const pct = (sumaAlertas / window.__abcTotalValor) * 100;
+    kpi.textContent = `${pct.toFixed(2)}%`;
+  }
+
+  function buildPreview() {
+    const cat = document.getElementById("wi-categoria").value.trim();
+    const red = Number(document.getElementById("wi-reduccion").value || 0);
+    const topn = document.getElementById("wi-topn").value;
+    const previewEl = document.getElementById("whatif-result");
+    if (!window.__catTotals || !cat) return;
+    const totalCat = window.__catTotals[cat] || window.__catTotals[cat.toLowerCase()];
+    if (!totalCat) return;
+    const pct = red > 1 ? red / 100 : red;
+    const impacted = totalCat * pct;
+    previewEl.innerHTML = `
+      <div class="text-sm font-semibold">Impacto estimado: ${moneyFmt(impacted)}</div>
+      <div class="text-xs text-gray-500">No modifica datos reales${topn ? ` | Top N: ${topn}` : ""}</div>
+    `;
+  }
+
+  async function handleWhatIf(event) {
+    event.preventDefault();
+    const categoria = document.getElementById("wi-categoria").value;
+    const reduccion = document.getElementById("wi-reduccion").value;
+    const topn = document.getElementById("wi-topn").value;
+    const resultEl = document.getElementById("whatif-result");
+    const errorEl = document.getElementById("whatif-error");
+    resultEl.textContent = "Calculando...";
+    errorEl.classList.add("hidden");
+    try {
+      const url = `/analysis/what-if?categoria=${encodeURIComponent(categoria)}&porcentaje_reduccion=${encodeURIComponent(reduccion)}${topn ? `&top_n=${encodeURIComponent(topn)}` : ""}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error("No se pudo calcular el escenario.");
+      const data = await res.json();
+      resultEl.innerHTML = `
+        <div class="flex justify-between text-sm">
+          <span>Capital liberado</span>
+          <strong>${moneyFmt(data.capital_liberado)}</strong>
+        </div>
+        <div class="flex justify-between text-sm text-gray-600">
+          <span>Valor actual</span>
+          <span>${moneyFmt(data.valor_actual_categoria || 0)}</span>
+        </div>
+        <div class="flex justify-between text-sm text-gray-600">
+          <span>Valor estimado post</span>
+          <span>${moneyFmt(data.valor_estimado_post || 0)}</span>
+        </div>
+        <div class="text-xs text-gray-500">
+          Categoria: ${data.categoria || "-"} |
+          Reduccion: ${data.porcentaje_reduccion || "-"}% |
+          ${data.top_n ? `Top N aplicado: ${data.top_n}` : "Aplicado a todos"}
+        </div>
+      `;
+      if (data.mensaje) {
+        resultEl.innerHTML += `<p class="text-xs text-gray-500 mt-2">${data.mensaje}</p>`;
+      }
+    } catch (err) {
+      resultEl.textContent = "";
+      errorEl.textContent = err.message;
+      errorEl.classList.remove("hidden");
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadABC();
+    loadAlerts();
+    document.getElementById("whatif-form").addEventListener("submit", handleWhatIf);
+    document.getElementById("alerts-filter").addEventListener("change", () => renderAlerts(1));
+    document.getElementById("alerts-prev").addEventListener("click", () => changeAlertsPage(-1));
+    document.getElementById("alerts-next").addEventListener("click", () => changeAlertsPage(1));
+    ["wi-categoria", "wi-reduccion", "wi-topn"].forEach((id) => {
+      const el = document.getElementById(id);
+      el.addEventListener("input", buildPreview);
+      el.addEventListener("change", buildPreview);
+    });
+  });
+</script>
 {% endblock %}
