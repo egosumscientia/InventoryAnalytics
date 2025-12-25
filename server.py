@@ -105,7 +105,10 @@ def analysis_abc():
 
 
 @app.get("/analysis/alerts")
-def analysis_alerts(top: int = Query(10, ge=1, le=50)):
+def analysis_alerts(top: int | None = Query(None, ge=1)):
+    """
+    Devuelve alertas priorizadas. Si no se especifica `top`, se devuelven todas las alertas.
+    """
     df = _load_clean_inventory()
     return business_analysis.generar_alertas(df, top_n=top)
 

@@ -5,6 +5,7 @@ import pandas as pd
 
 from config import DATA_PATH
 from scripts import data_clean, data_load
+from scripts.data_load import SUPPORTED_EXTENSIONS
 
 # Base file name can be overridden to point endpoints to a specific dataset
 DEFAULT_BASE_NAME = os.getenv("INVENTORY_BASE_NAME", "inventario")
@@ -15,7 +16,13 @@ def load_clean_inventory(base_name: str = DEFAULT_BASE_NAME) -> pd.DataFrame:
     Load and clean the inventory using existing loaders to avoid duplicating logic.
     """
     base_path = DATA_PATH / base_name
-    actual_path = data_load.find_actual_file_path(str(base_path))
+
+    # Permitir que base_name se pase con o sin extensión
+    if base_path.suffix.lower() in SUPPORTED_EXTENSIONS:
+        actual_path = base_path
+    else:
+        actual_path = data_load.find_actual_file_path(str(base_path))
+
     df_raw = data_load.load_data(actual_path)
     return data_clean.data_clean(df_raw)
 

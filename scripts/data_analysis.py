@@ -75,6 +75,14 @@ def productos_mas_costosos(df: pd.DataFrame, n: int) -> None:
 
 
 def valor_min_max(df: pd.DataFrame) -> None:
+    # Evita fallar cuando no hay datos válidos tras la limpieza
+    if df.empty:
+        print("\nProducto más económico:")
+        print("Sin datos disponibles")
+        print("\nProducto más costoso:")
+        print("Sin datos disponibles")
+        return
+
     min_valor = df.loc[df["precio"].idxmin()][["codigo", "nombre", "precio"]]
     max_valor = df.loc[df["precio"].idxmax()][["codigo", "nombre", "precio"]]
     print("\nProducto más económico:")
@@ -94,6 +102,10 @@ def grafico_distribucion_stock(df: pd.DataFrame) -> None:
     df = df.copy()
     df["cantidad"] = pd.to_numeric(df["cantidad"], errors="coerce")
     datos = df[df["cantidad"].notna() & (df["cantidad"] >= 0)]["cantidad"]
+
+    if datos.empty:
+        print("⚠ Datos insuficientes para generar histograma de stock (0 registros válidos).")
+        return
 
     # Configuración manual de estilo
     plt.rcParams.update(

@@ -174,7 +174,7 @@
   async function loadAlerts() {
     window.__alertsData = [];
     try {
-      const res = await fetch("/analysis/alerts?top=50");
+      const res = await fetch("/analysis/alerts");
       if (!res.ok) throw new Error("No se pudieron obtener alertas");
       const data = await res.json();
       window.__alertsData = data.alertas || [];
@@ -242,12 +242,28 @@
 
   function updateCapitalRiesgo() {
     const kpi = document.querySelector("#kpi-capital-riesgo p");
-    if (!window.__alertsData || window.__alertsData.length === 0 || !window.__abcTotalValor) {
+    const alerts = window.__alertsData || [];
+    const totalValor = Number(window.__abcTotalValor || 0);
+    if (!alerts.length || !totalValor) {
       kpi.textContent = "...";
       return;
     }
-    const sumaAlertas = window.__alertsData.reduce((acc, a) => acc + (Number(a.valor_total) || 0), 0);
-    const pct = (sumaAlertas / window.__abcTotalValor) * 100;
+
+    // Usar productos únicos (clave priorizando código; fallback código|nombre) y tomar el valor máximo por producto
+    const valorPorProducto = new Map();
+    alerts.forEach((a, idx) => {
+      const codigo = (a.codigo || "").toString().trim();
+      const nombre = (a.nombre || "").toString().trim();
+      const key = codigo || (codigo || nombre ? `${codigo}|${nombre}` : `sin-id-${idx}`);
+      const valor = Number(a.valor_total) || 0;
+      const previo = valorPorProducto.get(key) || 0;
+      if (valor > previo) {
+        valorPorProducto.set(key, valor);
+      }
+    });
+
+    const sumaUnicos = Array.from(valorPorProducto.values()).reduce((acc, v) => acc + v, 0);
+    const pct = Math.min(100, (sumaUnicos / totalValor) * 100);
     kpi.textContent = `${pct.toFixed(2)}%`;
   }
 

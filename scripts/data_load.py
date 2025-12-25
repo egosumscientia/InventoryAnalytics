@@ -34,13 +34,20 @@ def load_data(file_path: Union[str, Path], try_alternatives: bool = True) -> pd.
         # Si el archivo no existe y se permiten alternativas
         if not file_path.exists() and try_alternatives:
             base_path = file_path.with_suffix("")
+
+            # Evita fallar si la carpeta no existe
+            if not file_path.parent.exists():
+                raise FileNotFoundError(
+                    f"No se encontró {original_path} ni la carpeta {file_path.parent}"
+                )
+
             for ext in SUPPORTED_EXTENSIONS:
                 if ext == file_ext:
                     continue
                 alternative_path = Path(f"{base_path}{ext}")
                 if alternative_path.exists():
                     file_path = alternative_path
-                    print(f"→ Archivo {original_path} no encontrado. Cargando {alternative_path}")
+                    print(f"Archivo {original_path} no encontrado. Cargando {alternative_path}")
                     break
             else:
                 available_files = [
@@ -63,7 +70,7 @@ def load_data(file_path: Union[str, Path], try_alternatives: bool = True) -> pd.
             raise ValueError(f"Extensión no manejada: {file_ext}")
 
         if df.empty:
-            print("⚠️  Advertencia: El archivo está vacío")
+            print("⚠  Advertencia: El archivo está vacío")
 
         return df
 

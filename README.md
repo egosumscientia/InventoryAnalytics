@@ -13,7 +13,7 @@ FastAPI web UI to clean and analyze inventory files (CSV/XLSX/ODS), generate KPI
 ## Configurable paths
 - Datos: `INVENTORY_DATA_PATH` (default `data/`).
 - Reportes/graficos: `INVENTORY_REPORTS_PATH` (default `reports/`).
-- Nombre base del archivo: `INVENTORY_BASE_NAME` (default `inventario`).
+- Nombre base del archivo: `INVENTORY_BASE_NAME` (default `inventario`). Puede incluir extensión (`inventario.csv`, `.xlsx`, `.ods`) o solo el nombre base; si no trae extensión, se buscará en ese orden.
 
 ## How to run (dev)
 1) Install deps: `pip install -r requirements.txt`
@@ -24,7 +24,7 @@ FastAPI web UI to clean and analyze inventory files (CSV/XLSX/ODS), generate KPI
 
 ## API (JSON)
 - `GET /analysis/abc` -> ABC classes + `% capital` en clase A (includes total_valor y detalle).
-- `GET /analysis/alerts?top=50` -> alertas priorizadas con severidad, recomendacion y umbrales.
+- `GET /analysis/alerts?top=` -> alertas priorizadas con severidad, recomendacion y umbrales. Sin `top` devuelve todas.
 - `GET /analysis/what-if?categoria=...&porcentaje_reduccion=...&top_n=` -> capital liberado estimado (no persiste cambios).
 
 ## Outputs generated
@@ -35,3 +35,4 @@ FastAPI web UI to clean and analyze inventory files (CSV/XLSX/ODS), generate KPI
 ## Notes
 - What-if preview en el dashboard usa datos cargados (no modifica archivos ni requiere endpoint nuevo).
 - Capital en Riesgo (%) = suma(valor_alertas) / valor_total * 100, calculado en el front usando alertas actuales.
+- Alerta CAPITAL_MUERTO: si el dataset no trae columna de rotación/ventas, se asume rotación 0 para todos los productos (heurística conservadora para detectar capital inmovilizado). Esto puede aumentar el número de alertas; ajustar solo si se dispone de datos de ventas/rotación.
