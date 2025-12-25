@@ -40,7 +40,7 @@ def data_clean(df: pd.DataFrame) -> pd.DataFrame:
     # 6. Filtrado final (asegura todas las columnas clave)
     df_clean = (
         df_clean[
-            (df_clean["cantidad"] > 0)
+            (df_clean["cantidad"] >= 0)  # permitir agotados
             & (df_clean["precio"] > 0)
             & (df_clean["nombre"].str.len() > 3)
         ]

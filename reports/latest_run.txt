@@ -1,1 +1,1 @@
-['valor_categoria_real.png', 'stock_analizado_confiable.png']
+['stock_analizado_confiable.png', 'valor_categoria_real.png']
