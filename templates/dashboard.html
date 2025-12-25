@@ -15,7 +15,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
   {% for chart in charts %}
   <div class="bg-white rounded-xl shadow p-4">
-    <img src="{{ url_for('static', path='../reports/' + chart) }}" alt="{{ chart }}" class="w-full rounded-md">
+    <img src="{{ url_for('reports', path=chart) }}" alt="{{ chart }}" class="w-full rounded-md">
   </div>
   {% endfor %}
 </div>
