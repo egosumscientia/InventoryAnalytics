@@ -1,4 +1,4 @@
-# InventoryManager
+# InventoryAnalytics
 
 FastAPI web UI to clean and analyze inventory files (CSV/XLSX/ODS), generate KPIs/charts, and expose actionable analytics.
 
@@ -9,6 +9,8 @@ FastAPI web UI to clean and analyze inventory files (CSV/XLSX/ODS), generate KPI
 - Alerts with severity (Alta/Media/Baja) for sobre stock, riesgo de quiebre, y capital muerto; sorted by economic impact with recommendations.
 - What-if simulator: estimate capital liberado por categoria, con opcion de limitar a top N items.
 - Dashboard UI shows KPIs, charts, ABC, alert list (filter/pagination), what-if form with instant preview, and KPI de Capital en Riesgo.
+- Upload validation: admite solo `.csv`, `.xlsx`, `.ods`, limita tamaño a 20 MB, sanitiza el nombre y sobrescribe si ya existía.
+- Esquema requerido para procesar: `codigo, nombre, categoria, ubicacion, cantidad, precio`. Si falta alguna columna o el archivo está vacío, responde 400 con mensaje claro.
 
 ## Configurable paths
 - Datos: `INVENTORY_DATA_PATH` (default `data/`).

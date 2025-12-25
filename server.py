@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query, Request, UploadFile
@@ -8,6 +9,9 @@ from fastapi.templating import Jinja2Templates
 
 from config import DATA_PATH, REPORTS_PATH
 from scripts import business_analysis, data_analysis, data_clean, data_load
+
+MAX_UPLOAD_SIZE_BYTES = 20 * 1024 * 1024  # 20 MB
+ALLOWED_EXTENSIONS = {".csv", ".xlsx", ".ods"}
 
 app = FastAPI(title="AI Inventory Management")
 
@@ -24,6 +28,8 @@ def _load_clean_inventory() -> pd.DataFrame:
     """
     try:
         return business_analysis.load_clean_inventory()
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc))
     except Exception as exc:  # pragma: no cover - FastAPI maneja la respuesta
@@ -65,14 +71,40 @@ async def upload_file(request: Request, file: UploadFile):
     DATA_PATH.mkdir(parents=True, exist_ok=True)
     REPORTS_PATH.mkdir(parents=True, exist_ok=True)
 
-    file_path = DATA_PATH / file.filename
-    with open(file_path, "wb") as f:
-        f.write(await file.read())
+    original_name = file.filename or ""
+    safe_name = Path(original_name).name  # elimina rutas/../
+    ext = Path(safe_name).suffix.lower()
 
-    # Procesamiento
-    df = data_load.load_data(file_path)
-    df = data_clean.data_clean(df)
-    data_analysis.analizar_inventario(df)
+    if not safe_name or safe_name in {".", ".."}:
+        raise HTTPException(status_code=400, detail="Nombre de archivo inválido.")
+    if ext not in ALLOWED_EXTENSIONS:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Extensión no permitida ({ext}). Usa: csv, xlsx u ods.",
+        )
+
+    raw_bytes = await file.read()
+    if len(raw_bytes) == 0:
+        raise HTTPException(status_code=400, detail="El archivo está vacío.")
+    if len(raw_bytes) > MAX_UPLOAD_SIZE_BYTES:
+        raise HTTPException(
+            status_code=400,
+            detail="El archivo supera el límite de 20 MB.",
+        )
+
+    file_path = DATA_PATH / safe_name
+    # Sobrescribe el archivo si ya existía (evita fallar al reintentar)
+    with open(file_path, "wb") as f:
+        f.write(raw_bytes)
+
+    try:
+        df = data_load.load_data(file_path)
+        df = data_clean.data_clean(df)
+        data_analysis.analizar_inventario(df)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=f"Error al procesar el archivo: {exc}")
 
     charts = [p.name for p in REPORTS_PATH.glob("*.png")]
 
@@ -94,7 +126,7 @@ async def upload_file(request: Request, file: UploadFile):
 
     return templates.TemplateResponse(
         "results.html",
-        {"request": request, "filename": file.filename, "summary": summary},
+        {"request": request, "filename": safe_name, "summary": summary},
     )
 
 

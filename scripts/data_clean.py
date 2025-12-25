@@ -10,6 +10,12 @@ def data_clean(df: pd.DataFrame) -> pd.DataFrame:
     """
     df_clean = df.copy()
 
+    required_cols = {"codigo", "nombre", "categoria", "ubicacion", "cantidad", "precio"}
+    missing = required_cols - set(df_clean.columns)
+    if missing:
+        cols = ", ".join(sorted(missing))
+        raise ValueError(f"Faltan columnas requeridas: {cols}.")
+
     # 0. Filtra categorías inválidas antes de normalizar a string
     if "categoria" in df_clean.columns:
         mask_invalid_cat = (
